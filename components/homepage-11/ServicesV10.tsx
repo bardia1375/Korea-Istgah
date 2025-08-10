@@ -6,12 +6,13 @@ import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
 const data = [
-{
-  "id": 1,
-  "title": "Seoul Tower",
-  "description": "The image features the N Seoul Tower (also known as Namsan Seoul Tower or Namsan Tower), a prominent landmark in Seoul, South Korea. The tower is surrounded by blooming cherry blossoms, indicating that the photo was likely taken during springtime, a popular time for viewing these flowers in Seoul.",
-  "image": "/images/370in561-/1.webp"
-},
+  {
+    id: 1,
+    title: 'Seoul Tower',
+    description:
+      'The image features the N Seoul Tower (also known as Namsan Seoul Tower or Namsan Tower), a prominent landmark in Seoul, South Korea. The tower is surrounded by blooming cherry blossoms, indicating that the photo was likely taken during springtime, a popular time for viewing these flowers in Seoul.',
+    image: '/images/370in561-/1.webp',
+  },
 
   {
     id: 2,
