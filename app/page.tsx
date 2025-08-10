@@ -21,6 +21,8 @@ import ServicesCard from '@/components/shared/ServicesCard'
 import { servicesType } from '@/components/shared/Services'
 import getMarkDownData from '@/utils/GetMarkDownData'
 import AboutV9 from '@/components/homepage-06/AboutV9'
+import ServicesV10 from '@/components/homepage-11/ServicesV10'
+import HeroV14 from '@/components/homepage-14/HeroV14'
 
 export const metadata = {
   title: 'Rivor | Design Agency',
@@ -52,12 +54,14 @@ const Home = () => {
         <i className="block font-instrument italic max-md:inline-block max-sm:pl-2 sm:mt-10">A virtual coffee?</i>
       </CTA> */}
       {/* <ClientsV3 /> */}
+      <HeroV14/>
       <HeroV7 />
       <Video />
-      <OurWork />
+      <OurWork />      <ServicesV6 />
       <AboutV9/>
       {/* <ServicesCard servicesData={servicesData} /> */}
-      <ServicesV6 />
+
+      <ServicesV10/>
       <TestimonialV2 />
       <ProcessV4 />
 
