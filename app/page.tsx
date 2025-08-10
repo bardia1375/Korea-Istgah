@@ -24,6 +24,7 @@ import AboutV9 from '@/components/homepage-06/AboutV9'
 import ServicesV10 from '@/components/homepage-11/ServicesV10'
 import HeroV14 from '@/components/homepage-14/HeroV14'
 import PortfolioV6 from '@/components/homepage-20/PortfolioV6'
+import ProcessV10 from '@/components/homepage-19/ProcessV10'
 
 export const metadata = {
   title: 'Rivor | Design Agency',
@@ -55,18 +56,17 @@ const Home = () => {
         <i className="block font-instrument italic max-md:inline-block max-sm:pl-2 sm:mt-10">A virtual coffee?</i>
       </CTA> */}
       {/* <ClientsV3 /> */}
-      <HeroV14/>
+      <HeroV14 />
       <HeroV7 />
       <Video />
-
-      <OurWork />      <ServicesV6 />
-      <AboutV9/>
+      <OurWork /> <ServicesV6 />
+      <AboutV9 />
       {/* <ServicesCard servicesData={servicesData} /> */}
-
-      <ServicesV10/>
+      <ServicesV10 />
       <TestimonialV2 />
       <ProcessV4 />
-      <PortfolioV6/>
+      <PortfolioV6 />
+      <ProcessV10 />
       {/* <PricingCard showHeader={true} /> */}
       {/* <CTA showContactForm>
         Let’s
