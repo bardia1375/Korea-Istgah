@@ -56,7 +56,7 @@ const Home = () => {
         <i className="block font-instrument italic max-md:inline-block max-sm:pl-2 sm:mt-10">A virtual coffee?</i>
       </CTA> */}
       {/* <ClientsV3 /> */}
-      <HeroV14 />
+      {/* <HeroV14 /> */}
       <HeroV7 />
       <Video />
       <OurWork />
