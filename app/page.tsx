@@ -23,6 +23,7 @@ import getMarkDownData from '@/utils/GetMarkDownData'
 import AboutV9 from '@/components/homepage-06/AboutV9'
 import ServicesV10 from '@/components/homepage-11/ServicesV10'
 import HeroV14 from '@/components/homepage-14/HeroV14'
+import PortfolioV6 from '@/components/homepage-20/PortfolioV6'
 
 export const metadata = {
   title: 'Rivor | Design Agency',
@@ -57,6 +58,7 @@ const Home = () => {
       <HeroV14/>
       <HeroV7 />
       <Video />
+
       <OurWork />      <ServicesV6 />
       <AboutV9/>
       {/* <ServicesCard servicesData={servicesData} /> */}
@@ -64,7 +66,7 @@ const Home = () => {
       <ServicesV10/>
       <TestimonialV2 />
       <ProcessV4 />
-
+      <PortfolioV6/>
       {/* <PricingCard showHeader={true} /> */}
       {/* <CTA showContactForm>
         Let’s
