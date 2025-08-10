@@ -16,10 +16,15 @@ import ServicesV6 from '@/components/shared/ServicesV6'
 import ServicesV8 from '@/components/shared/ServicesV8'
 import TestimonialV2 from '@/components/shared/TestimonialV2'
 import Video from '@/components/shared/Video'
+import AboutV3 from './AboutV3'
+import ServicesCard from '@/components/shared/ServicesCard'
+import { servicesType } from '@/components/shared/Services'
+import getMarkDownData from '@/utils/GetMarkDownData'
 
 export const metadata = {
   title: 'Rivor | Design Agency',
 }
+const servicesData: servicesType[] = getMarkDownData('data/services')
 
 const Home = () => {
   return (
@@ -49,11 +54,14 @@ const Home = () => {
       <HeroV7 />
       <Video />
       <OurWork />
+      {/* <AboutV3/> */}
+      {/* <ServicesCard servicesData={servicesData} /> */}
       <ServicesV6 />
       <TestimonialV2 />
       <ProcessV4 />
+
       {/* <PricingCard showHeader={true} /> */}
-      <CTA showContactForm>
+      {/* <CTA showContactForm>
         Let’s
         <CtaImageSlider
           slides={[
@@ -64,7 +72,7 @@ const Home = () => {
         />
         Create
         <span className="block font-instrument italic max-md:inline-block sm:mt-10">Something Iconic</span>
-      </CTA>
+      </CTA> */}
     </LayoutOne>
   )
 }

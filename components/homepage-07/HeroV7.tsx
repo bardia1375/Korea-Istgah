@@ -14,12 +14,11 @@ const HeroV7 = () => {
       <RevealWrapper className="mx-auto max-w-screen-xl px-5">
         <div>
           <h1 className="font-normal max-lg:text-center xl:text-[96px] xl:leading-[1.3] xl:tracking-[-2.88px]">
-            Istgah Korea
+            Korea vs Istgah
             <CtaImageSlider
               slides={[
-                { id: '1', img: '/images/agent/01.jpg' },
-                { id: '2', img: '/images/agent/02.jpg' },
-                { id: '3', img: '/images/agent/03.jpg' },
+                { id: '1', img: '/images/500in200/1.png' },
+                { id: '2', img: '/images/500in200/2.png' },
               ]}
             />
             Your Gateway to Korean Education and Culture
