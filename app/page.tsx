@@ -59,7 +59,8 @@ const Home = () => {
       <HeroV14 />
       <HeroV7 />
       <Video />
-      <OurWork /> <ServicesV6 />
+      <OurWork /> 
+      <ServicesV6 />
       <AboutV9 />
       {/* <ServicesCard servicesData={servicesData} /> */}
       <ServicesV10 />
