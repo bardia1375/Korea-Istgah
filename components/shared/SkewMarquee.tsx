@@ -9,18 +9,18 @@ import { useRef } from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
 const MARQUEE_IMAGES = [
-  { id: 1, src: '/images/1156in1477/1.png' },
-  { id: 2, src: '/images/1156in1477/2.png' },
-  { id: 3, src: '/images/1156in1477/3.png' },
-  { id: 4, src: '/images/1156in1477/4.png' },
-  { id: 5, src: '/images/1156in1477/5.png' },
-  { id: 6, src: '/images/1156in1477/6.png' },
-  { id: 7, src: '/images/1156in1477/1.png' },
-  { id: 8, src: '/images/1156in1477/2.png' },
-  { id: 9, src: '/images/1156in1477/3.png' },
-  { id: 10, src: '/images/1156in1477/4.png' },
-  { id: 11, src: '/images/1156in1477/5.png' },
-  { id: 12, src: '/images/1156in1477/6.png' },
+  { id: 2, src: '/images/1156in1477-/2.webp' },
+  { id: 1, src: '/images/1156in1477-/1.webp' },
+  { id: 3, src: '/images/1156in1477-/3.webp' },
+  { id: 4, src: '/images/1156in1477-/4.webp' },
+  { id: 5, src: '/images/1156in1477-/5.webp' },
+  { id: 6, src: '/images/1156in1477-/6.webp' },
+  { id: 7, src: '/images/1156in1477-/1.webp' },
+  { id: 8, src: '/images/1156in1477-/2.webp' },
+  { id: 9, src: '/images/1156in1477-/3.webp' },
+  { id: 10, src: '/images/1156in1477-/4.webp' },
+  { id: 11, src: '/images/1156in1477-/5.webp' },
+  { id: 12, src: '/images/1156in1477-/6.webp' },
 ]
 
 const SkewMarquee = () => {

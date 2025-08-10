@@ -6,49 +6,49 @@ import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
 const data = [
-  {
-    id: 1,
-    title: 'Advertising videos',
-    description:
-      "Could you clarify what you'd like to know or discuss regarding? It can refer to various concepts like representation.",
-    image: '/images/services-2/service-item-1.png',
-  },
+{
+  "id": 1,
+  "title": "Seoul Tower",
+  "description": "The image features the N Seoul Tower (also known as Namsan Seoul Tower or Namsan Tower), a prominent landmark in Seoul, South Korea. The tower is surrounded by blooming cherry blossoms, indicating that the photo was likely taken during springtime, a popular time for viewing these flowers in Seoul.",
+  "image": "/images/370in561-/1.webp"
+},
+
   {
     id: 2,
     title: 'Corporate & brand films',
     description:
       'It implies a combination of capabilities and specialized skills, which could be technical or procedural.',
-    image: '/images/services-2/service-item-2.png',
+    image: '/images/370in561-/2.webp',
   },
   {
     id: 3,
     title: 'Live streaming',
     description: 'It emphasizes professionalism and the depth of experience across various services or specialties.',
-    image: '/images/services-2/service-item-3.png',
+    image: '/images/370in561-/3.webp',
   },
   {
     id: 4,
     title: 'Music videos',
     description: 'Music videos that capture the essence of your sound and vision.',
-    image: '/images/services-2/service-item-1.png',
+    image: '/images/370in561-/4.webp',
   },
   {
     id: 5,
     title: 'Documentary films',
     description: 'Capturing real stories and experiences through the art of filmmaking.',
-    image: '/images/services-2/service-item-2.png',
+    image: '/images/370in561-/2.webp',
   },
   {
     id: 6,
     title: 'Event coverage',
     description: 'Providing comprehensive coverage of your events with a professional touch.',
-    image: '/images/services-2/service-item-3.png',
+    image: '/images/370in561-/5.webp',
   },
   {
     id: 7,
     title: 'Promotional videos',
     description: 'Creating compelling promotional videos to showcase your brand and products.',
-    image: '/images/services-2/service-item-1.png',
+    image: '/images/370in561-/6.webp',
   },
 ]
 
