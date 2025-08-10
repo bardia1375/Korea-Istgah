@@ -66,8 +66,8 @@ const Home = () => {
       <ServicesV10 />
       <TestimonialV2 />
       <ProcessV4 />
-      <PortfolioV6 />
-      <ProcessV10 />
+      {/* <PortfolioV6 /> */}
+      {/* <ProcessV10 /> */}
       {/* <PricingCard showHeader={true} /> */}
       {/* <CTA showContactForm>
         Let’s

@@ -1,4 +1,4 @@
-import processImg from '@/public/images/process-img-01.png'
+import processImg from '@/public/images/roadmap.webp'
 import Image from 'next/image'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'

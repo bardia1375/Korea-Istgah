@@ -18,7 +18,7 @@ const HeroV7 = () => {
             <CtaImageSlider
               slides={[
                 { id: '1', img: '/images/500in200/1.png' },
-                { id: '2', img: '/images/500in200/2.png' },
+                { id: '2', img: '/images/500in200/3.png' },
               ]}
             />
             Your Gateway to Korean Education and Culture

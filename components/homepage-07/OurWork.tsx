@@ -7,6 +7,17 @@ import image06 from '@/public/images/370in451/6.png'
 import image07 from '@/public/images/370in451/6.png'
 import image08 from '@/public/images/370in451/6.png'
 import image09 from '@/public/images/370in451/6.png'
+
+import image11 from '@/public/images/370in451-/1.webp'
+import image12 from '@/public/images/370in451-/2.webp'
+import image13 from '@/public/images/370in451-/3.webp'
+import image14 from '@/public/images/370in451-/4.webp'
+import image15 from '@/public/images/370in451-/5.webp'
+import image16 from '@/public/images/370in451-/6.webp'
+import image17 from '@/public/images/370in451-/6.webp'
+import image18 from '@/public/images/370in451-/6.webp'
+import image19 from '@/public/images/370in451-/6.webp'
+
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 import RevealWrapper from '../animation/RevealWrapper'
@@ -22,6 +33,15 @@ const WORK_IMAGES = [
   { id: 7, src: image07, alt: 'Client Logo 7' },
   { id: 8, src: image08, alt: 'Client Logo 8' },
   { id: 9, src: image09, alt: 'Client Logo 9' },
+  { id: 10, src: image11, alt: 'Client Logo 1' },
+  { id: 12, src: image12, alt: 'Client Logo 2' },
+  { id: 13, src: image13, alt: 'Client Logo 3' },
+  { id: 14, src: image14, alt: 'Client Logo 4' },
+  { id: 15, src: image15, alt: 'Client Logo 5' },
+  { id: 16, src: image16, alt: 'Client Logo 6' },
+  { id: 17, src: image17, alt: 'Client Logo 7' },
+  { id: 18, src: image18, alt: 'Client Logo 8' },
+  { id: 19, src: image19, alt: 'Client Logo 9' },
 ]
 
 const OurWork = () => {
