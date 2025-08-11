@@ -15,9 +15,8 @@ const AboutV9 = () => {
           </RevealWrapper>
           <TextAppearAnimation>
             <h2 className="text-appear mb-8 mt-3 text-center">
-              Celebrating the National Day of 
-
- <br className="hidden md:block" />
+              Celebrating the National Day of
+              <br className="hidden md:block" />
               the Republic of Korea
             </h2>
           </TextAppearAnimation>
@@ -26,8 +25,13 @@ const AboutV9 = () => {
         <h3
           ref={revealRef}
           className="text-center text-2xl font-normal text-secondary/90 dark:text-backgroundBody/70 lg:text-3xl lg:leading-[1.2] lg:tracking-[0.72px] xl:text-4xl">
-The National Day of the Republic of Korea is a time to honor the nation’s rich history, vibrant culture, and the enduring spirit of its people. This celebration reflects the shared values of friendship, cooperation, and cultural exchange between Korea and nations around the world. From traditional performances and art exhibitions to culinary experiences, the event is a tribute to the heritage and progress of Korea, fostering deeper understanding and stronger connections        </h3>
-{/* 
+          The National Day of the Republic of Korea is a time to honor the nation’s rich history, vibrant culture, and
+          the enduring spirit of its people. This celebration reflects the shared values of friendship, cooperation, and
+          cultural exchange between Korea and nations around the world. From traditional performances and art
+          exhibitions to culinary experiences, the event is a tribute to the heritage and progress of Korea, fostering
+          deeper understanding and stronger connections{' '}
+        </h3>
+        {/* 
         <RevealWrapper as="ul" className="mx-auto mt-[56px] flex list-none justify-center">
           <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
             <Link  href="/team" className="rv-button rv-button-white block md:inline-block">

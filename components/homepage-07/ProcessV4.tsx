@@ -12,11 +12,11 @@ import useReveal from '@/hooks/useReveal'
 gsap.registerPlugin(ScrollTrigger)
 
 const ProcessV4 = () => {
-  const listRef = useRef(null)
+  const listRef = useRef<HTMLDivElement | null>(null)
   const { revealRef } = useReveal()
 
   useEffect(() => {
-    const items = listRef.current.querySelectorAll('.timeline-item')
+    const items = listRef.current!.querySelectorAll('.timeline-item')
     gsap.set(items, { opacity: 0, y: 40 })
 
     gsap.to(items, {
@@ -26,34 +26,34 @@ const ProcessV4 = () => {
       ease: 'power2.out',
       stagger: 0.2,
       scrollTrigger: {
-        trigger: listRef.current,
+        trigger: listRef.current!,
         start: 'top 80%',
-        toggleActions: 'play none none reverse'
-      }
+        toggleActions: 'play none none reverse',
+      },
     })
   }, [])
 
   const schedule = [
     {
-      title: "Opening Ceremony & Ambassador’s Speech",
-      desc: "The event begins with a warm welcome and an inspiring speech by the Ambassador of the Republic of Korea, highlighting the strong bonds of friendship and cooperation."
+      title: 'Opening Ceremony & Ambassador’s Speech',
+      desc: 'The event begins with a warm welcome and an inspiring speech by the Ambassador of the Republic of Korea, highlighting the strong bonds of friendship and cooperation.',
     },
     {
-      title: "Cultural Performances",
-      desc: "Experience traditional Korean music and dance performances that showcase the vibrant heritage of the Korean Peninsula."
+      title: 'Cultural Performances',
+      desc: 'Experience traditional Korean music and dance performances that showcase the vibrant heritage of the Korean Peninsula.',
     },
     {
-      title: "Istgah Orchestra Performance",
-      desc: "Enjoy a live orchestral performance by the talented Istgah Orchestra, blending classical melodies with Korean-inspired compositions."
+      title: 'Istgah Orchestra Performance',
+      desc: 'Enjoy a live orchestral performance by the talented Istgah Orchestra, blending classical melodies with Korean-inspired compositions.',
     },
     {
-      title: "Gala Dinner & Reception",
-      desc: "Guests are invited to a refined dinner featuring authentic Korean cuisine and international favorites, offering a taste of cultural exchange."
+      title: 'Gala Dinner & Reception',
+      desc: 'Guests are invited to a refined dinner featuring authentic Korean cuisine and international favorites, offering a taste of cultural exchange.',
     },
     {
-      title: "Special Surprise by the Ambassador",
-      desc: "A memorable closing moment as the Ambassador presents a special surprise to honor the occasion and thank the guests for their presence."
-    }
+      title: 'Special Surprise by the Ambassador',
+      desc: 'A memorable closing moment as the Ambassador presents a special surprise to honor the occasion and thank the guests for their presence.',
+    },
   ]
 
   return (
@@ -70,10 +70,7 @@ const ProcessV4 = () => {
 
         <RevealWrapper className="flex flex-col gap-20 md:flex-row">
           <figure>
-            <Image
-              src={processImg}
-              alt="Event Schedule"
-            />
+            <Image src={processImg} alt="Event Schedule" />
           </figure>
 
           <div ref={listRef}>
@@ -87,7 +84,9 @@ const ProcessV4 = () => {
                   </div>
                   <div className="ml-[30px]">
                     <h3 ref={revealRef}>{item.title}</h3>
-                    <p className="mt-5 max-w-[483px]" ref={revealRef}>{item.desc}</p>
+                    <p className="mt-5 max-w-[483px]" ref={revealRef}>
+                      {item.desc}
+                    </p>
                   </div>
                 </li>
               ))}
