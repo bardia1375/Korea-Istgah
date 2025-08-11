@@ -33,19 +33,19 @@ const servicesData = [
       'Future Vision & Goals',
     ],
   },
-  {
-    id: 3,
-    title: 'Musicians List',
-    subtitle: 'Celebrating Korean musical talents',
-    items: [
-      'K-pop Solo Artists',
-      'Popular Boy Groups',
-      'Notable Girl Groups',
-      'Traditional Musicians',
-      'Independent Artists',
-      'Award-Winning Composers',
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: 'Musicians List',
+  //   subtitle: 'Celebrating Korean musical talents',
+  //   items: [
+  //     'K-pop Solo Artists',
+  //     'Popular Boy Groups',
+  //     'Notable Girl Groups',
+  //     'Traditional Musicians',
+  //     'Independent Artists',
+  //     'Award-Winning Composers',
+  //   ],
+  // },
   {
     id: 4,
     title: 'Songs List',
@@ -157,20 +157,20 @@ const ServicesV6 = () => {
             </div>
           ))}
         </RevealWrapper>
-        <RevealWrapper as="ul" className="reveal-me mt-14 flex justify-center">
+        {/* <RevealWrapper as="ul" className="reveal-me mt-14 flex justify-center">
           <li className="max-md:w-full">
             <Link
               href="/services"
               className="rv-button rv-button-white block w-full text-center md:inline-block md:w-auto">
               <div className="rv-button-top">
-                <span>Explore Services</span>
+                <span>Explore Sevices</span>
               </div>
               <div className="rv-button-bottom">
                 <span>Explore Services</span>
               </div>
             </Link>
           </li>
-        </RevealWrapper>
+        </RevealWrapper> */}
       </div>
     </section>
   )

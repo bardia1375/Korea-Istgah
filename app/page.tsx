@@ -57,15 +57,18 @@ const Home = () => {
       </CTA> */}
       {/* <ClientsV3 /> */}
       {/* <HeroV14 /> */}
-      <HeroV7 />
+      <HeroV7 />      <AboutV9 />
+
       <Video />
+            <ProcessV4 />
+
       <OurWork />
-      <ServicesV6 />
-      <AboutV9 />
+
+
       {/* <ServicesCard servicesData={servicesData} /> */}
-      <ServicesV10 />
-      <TestimonialV2 />
-      <ProcessV4 />
+      <ServicesV10 />   
+         <ServicesV6 />
+      {/* <TestimonialV2 /> */}
       {/* <PortfolioV6 /> */}
       {/* <ProcessV10 /> */}
       {/* <PricingCard showHeader={true} /> */}

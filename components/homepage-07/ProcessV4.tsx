@@ -1,73 +1,96 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import processImg from '@/public/images/roadmap.webp'
 import Image from 'next/image'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
+import useReveal from '@/hooks/useReveal'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const ProcessV4 = () => {
+  const listRef = useRef(null)
+  const { revealRef } = useReveal()
+
+  useEffect(() => {
+    const items = listRef.current.querySelectorAll('.timeline-item')
+    gsap.set(items, { opacity: 0, y: 40 })
+
+    gsap.to(items, {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      ease: 'power2.out',
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: listRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none reverse'
+      }
+    })
+  }, [])
+
+  const schedule = [
+    {
+      title: "Opening Ceremony & Ambassador’s Speech",
+      desc: "The event begins with a warm welcome and an inspiring speech by the Ambassador of the Republic of Korea, highlighting the strong bonds of friendship and cooperation."
+    },
+    {
+      title: "Cultural Performances",
+      desc: "Experience traditional Korean music and dance performances that showcase the vibrant heritage of the Korean Peninsula."
+    },
+    {
+      title: "Istgah Orchestra Performance",
+      desc: "Enjoy a live orchestral performance by the talented Istgah Orchestra, blending classical melodies with Korean-inspired compositions."
+    },
+    {
+      title: "Gala Dinner & Reception",
+      desc: "Guests are invited to a refined dinner featuring authentic Korean cuisine and international favorites, offering a taste of cultural exchange."
+    },
+    {
+      title: "Special Surprise by the Ambassador",
+      desc: "A memorable closing moment as the Ambassador presents a special surprise to honor the occasion and thank the guests for their presence."
+    }
+  ]
+
   return (
     <section className="pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container">
         <div className="mb-8 text-center md:mb-20">
           <RevealWrapper className="rv-badge reveal-me mb-5 md:mb-8">
-            <span className="rv-badge-text">Our Process</span>
+            <span className="rv-badge-text">Event Schedule</span>
           </RevealWrapper>
           <TextAppearAnimation>
-            <h2 className="text-appear mx-auto max-w-[770px]">Our Creative Journey</h2>
+            <h2 className="text-appear mx-auto max-w-[770px]">National Day of the Republic of Korea</h2>
           </TextAppearAnimation>
         </div>
+
         <RevealWrapper className="flex flex-col gap-20 md:flex-row">
           <figure>
             <Image
               src={processImg}
-              alt="Process
-           Images "
+              alt="Event Schedule"
             />
           </figure>
 
-          <div>
+          <div ref={listRef}>
             <ul className="relative space-y-10 border-secondary dark:border-backgroundBody md:border-l lg:space-y-28 xl:space-y-[170px]">
-              <li className="max-w-max px-10">
-                <div className="absolute left-0 flex items-center justify-center rounded-full border-backgroundBody bg-secondary px-3.5 py-5 text-lg font-bold text-white dark:border-[#151515] md:-left-11 md:border-[18px] lg:-left-[52px] lg:px-6 lg:py-8">
-                  <span className="inline-block bg-gradient-to-r from-backgroundBody to-gray-400 bg-clip-text text-xl font-semibold text-black text-transparent dark:bg-gradient-to-r dark:from-white dark:to-[#BDBDBD] dark:bg-clip-text dark:text-[#FFF] dark:text-transparent">
-                    01
-                  </span>
-                </div>
-                <div className="ml-[30px]">
-                  <h3 className="">Book a Call</h3>
-                  <p className="mt-5 max-w-[483px]">
-                    Choose a date and time to book a discovery session, during which we’ll define the project
-                    objectives, timeline, and budget.
-                  </p>
-                </div>
-              </li>
-              <li className="max-w-max px-10">
-                <div className="absolute left-0 flex items-center justify-center rounded-full border-backgroundBody bg-secondary px-3.5 py-5 text-lg font-bold text-white dark:border-[#151515] md:-left-11 md:border-[18px] lg:-left-[54px] lg:px-6 lg:py-8">
-                  <span className="inline-block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-xl font-semibold text-black text-transparent dark:bg-gradient-to-r dark:from-white dark:to-[#BDBDBD] dark:bg-clip-text dark:text-[#FFF] dark:text-transparent">
-                    02
-                  </span>
-                </div>
-                <div className="ml-[30px]">
-                  <h3 className="">Receive an Offer</h3>
-                  <p className="mt-5 max-w-[483px]">
-                    We’ll send you a bespoke project proposal including deliverables, project roadmap, and a quote in
-                    1-2 business days.
-                  </p>
-                </div>
-              </li>
-              <li className="max-w-max px-10">
-                <div className="absolute left-0 flex items-center justify-center rounded-full border-backgroundBody bg-secondary px-3.5 py-5 text-lg font-bold text-white dark:border-[#151515] md:-left-11 md:border-[18px] lg:-left-[54px] lg:px-6 lg:py-8">
-                  <span className="inline-block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-xl font-semibold text-black text-transparent dark:bg-gradient-to-r dark:from-white dark:to-[#BDBDBD] dark:bg-clip-text dark:text-[#FFF] dark:text-transparent">
-                    03
-                  </span>
-                </div>
-                <div className="ml-[30px]">
-                  <h3 className="">Kickoff the Project</h3>
-                  <p className="mt-5 max-w-[483px]">
-                    Sign the contract, send the deposit, lean back, and let us do our thing. We’ll invite you to a
-                    design review meeting in 5-7 business days.
-                  </p>
-                </div>
-              </li>
+              {schedule.map((item, index) => (
+                <li key={index} className="timeline-item max-w-max px-10">
+                  <div className="absolute left-0 flex items-center justify-center rounded-full border-backgroundBody bg-secondary px-3.5 py-5 text-lg font-bold text-white dark:border-[#151515] md:-left-11 md:border-[18px] lg:-left-[52px] lg:px-6 lg:py-8">
+                    <span className="inline-block bg-gradient-to-r from-backgroundBody to-gray-400 bg-clip-text text-xl font-semibold text-black text-transparent dark:bg-gradient-to-r dark:from-white dark:to-[#BDBDBD] dark:bg-clip-text dark:text-[#FFF] dark:text-transparent">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <div className="ml-[30px]">
+                    <h3 ref={revealRef}>{item.title}</h3>
+                    <p className="mt-5 max-w-[483px]" ref={revealRef}>{item.desc}</p>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </RevealWrapper>

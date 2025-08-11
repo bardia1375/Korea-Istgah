@@ -11,12 +11,14 @@ const AboutV9 = () => {
       <div className="container">
         <div className="text-center">
           <RevealWrapper className="rv-badge">
-            <span className="rv-badge-text">Who We Are</span>
+            <span className="rv-badge-text">About Celebration</span>
           </RevealWrapper>
           <TextAppearAnimation>
             <h2 className="text-appear mb-8 mt-3 text-center">
-              We Are the Architects of Creative <br className="hidden md:block" />
-              Innovation
+              Celebrating the National Day of 
+
+ <br className="hidden md:block" />
+              the Republic of Korea
             </h2>
           </TextAppearAnimation>
         </div>
@@ -24,15 +26,11 @@ const AboutV9 = () => {
         <h3
           ref={revealRef}
           className="text-center text-2xl font-normal text-secondary/90 dark:text-backgroundBody/70 lg:text-3xl lg:leading-[1.2] lg:tracking-[0.72px] xl:text-4xl">
-          At Rivor, we believe design goes beyond aesthetics—it’s about crafting meaningful connections that inspire,
-          engage, and leave a lasting impact. Our approach blends creativity with strategy, ensuring that every design
-          element serves a purpose. Whether it’s branding, user experience, or digital interfaces, we focus on
-          innovation that resonates with your audience.
-        </h3>
-
+The National Day of the Republic of Korea is a time to honor the nation’s rich history, vibrant culture, and the enduring spirit of its people. This celebration reflects the shared values of friendship, cooperation, and cultural exchange between Korea and nations around the world. From traditional performances and art exhibitions to culinary experiences, the event is a tribute to the heritage and progress of Korea, fostering deeper understanding and stronger connections        </h3>
+{/* 
         <RevealWrapper as="ul" className="mx-auto mt-[56px] flex list-none justify-center">
           <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-            <Link href="/team" className="rv-button rv-button-white block md:inline-block">
+            <Link  href="/team" className="rv-button rv-button-white block md:inline-block">
               <div className="rv-button-top">
                 <span>Meet the Team</span>
               </div>
@@ -41,7 +39,7 @@ const AboutV9 = () => {
               </div>
             </Link>
           </li>
-        </RevealWrapper>
+        </RevealWrapper> */}
       </div>
     </section>
   )

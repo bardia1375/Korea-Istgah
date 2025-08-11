@@ -14,21 +14,20 @@ const HeroV7 = () => {
       <RevealWrapper className="mx-auto max-w-screen-xl px-5">
         <div>
           <h1 className="font-normal max-lg:text-center xl:text-[96px] xl:leading-[1.3] xl:tracking-[-2.88px]">
-            Korea vs Istgah
+            Republic of Korea National Day
             <CtaImageSlider
               slides={[
-                { id: '1', img: '/images/500in200/1.png' },
-                { id: '2', img: '/images/500in200/3.png' },
+                { id: '1', img: '/images/500in200-/3.webp' },
+                { id: '2', img: '/images/500in200-/4.webp' },
               ]}
             />
-            Your Gateway to Korean Education and Culture
+            Honoring the National Day of the Republic of Korea{' '}
           </h1>
         </div>
 
         <p className="mt-10 max-w-[770px] font-normal max-lg:mx-auto">
-          Discover your path to success with Istgah Korea, your trusted partner in Korean education and cultural
-          exchange. We provide comprehensive guidance for studying in Korea, language programs, and cultural immersion
-          experiences.
+          Join us in celebrating the vibrant culture, heritage, and friendship between Korea and our community. This
+          special event honors the shared values, traditions, and the strong bonds that connect us.
         </p>
       </RevealWrapper>
 

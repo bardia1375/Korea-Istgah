@@ -19,8 +19,8 @@ const HeroAbout = ({ spacingTop }: PropsTypes) => {
   ) : (
     <RevealWrapper as="section" className="container">
       <h3 ref={revealRef}>
-        We specialize in designing cutting-edge web experiences that flawlessly blend creativity with innovative
-        technology.
+        We proudly celebrate the vibrant traditions, cultural heritage, and enduring friendship of the Republic of
+        Korea.
       </h3>
     </RevealWrapper>
   )
