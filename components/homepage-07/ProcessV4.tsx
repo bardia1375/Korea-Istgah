@@ -66,8 +66,8 @@ const ProcessV4 = () => {
                     </span>
                   </div>
                   <div className="ml-[30px]">
-                    <h3>{item.title}</h3>
-                    <p className="mt-5 max-w-[483px]">{item.desc}</p>
+                    <h3 className="text-2xl">{item.title}</h3>
+                    <p className="mt-5 max-w-[483px] text-sm">{item.desc}</p>
                   </div>
                 </li>
               ))}

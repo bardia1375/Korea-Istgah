@@ -20,7 +20,7 @@ const SectionHeader = ({
       <TextAppearAnimation>
         {titleChange ? (
           <h2 className="text-appear block">
-            <span className="font-instrument italic">Frequently asked </span>
+            <span className="font-instrument italic">Frequently asked</span>
             questions
           </h2>
         ) : (

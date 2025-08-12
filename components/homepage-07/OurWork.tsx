@@ -7,6 +7,7 @@ import image06 from '@/public/images/370in451/6.png'
 import image07 from '@/public/images/370in451/6.png'
 import image08 from '@/public/images/370in451/6.png'
 import image09 from '@/public/images/370in451/6.png'
+import logoDark from '@/public/images/500in200-/korea-istgah.png'
 
 // import image11 from '@/public/images/370in451-/1.webp'
 // import image12 from '@/public/images/370in451-/2.webp'
@@ -46,20 +47,42 @@ const WORK_IMAGES = [
 
 const OurWork = () => {
   return (
-    <section className="overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
+    <section className="relative overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container">
         <div className="mb-8 text-center md:mb-20">
           <RevealWrapper className="rv-badge reveal-me mb-5 md:mb-8">
             <span className="rv-badge-text">Our Work</span>
           </RevealWrapper>
           <TextAppearAnimation>
-            <h2 className="text-appear mx-auto max-w-[770px]">We craft emotionally engaging stories.</h2>
+            <h2 className="appear·mx-auto·max-w-[770px]·text-2xl">We craft emotionally engaging stories.</h2>
           </TextAppearAnimation>
         </div>
       </div>
 
+      {/* Subtle Korean flag watermark */}
+      <div className="absolute top-0 left-12">
+        <Image
+          src={logoDark}
+          alt="Flag of the Republic of Korea"
+          width={80}
+          height={80}
+          className="opacity-1 h-auto"
+          priority={false}
+        />
+      </div>
+      <div className="absolute top-0 right-12">
+        <Image
+          src={logoDark}
+          alt="Flag of the Republic of Korea"
+          width={80}
+          height={80}
+          className="opacity-1 h-auto"
+          priority={false}
+        />
+      </div>
+
       <RevealWrapper>
-        <Marquee speed={70} pauseOnHover>
+        <Marquee speed={70}>
           <div className="flex items-center gap-4 md:gap-[30px]">
             {WORK_IMAGES.slice(0, 5).map(({ src, alt, id }) => (
               <div key={id} className="h-72 max-w-60 first:ml-4 md:h-[470px] md:max-w-[370px] md:first:ml-[30px]">
@@ -71,7 +94,7 @@ const OurWork = () => {
       </RevealWrapper>
 
       <RevealWrapper>
-        <Marquee speed={70} pauseOnHover direction="right">
+        <Marquee speed={70} direction="right">
           <div className="flex items-center justify-around gap-4 pt-[30px] md:gap-[30px]">
             {WORK_IMAGES.toReversed().map(({ src, alt, id }) => (
               <div key={id} className="h-72 max-w-60 first:ml-4 md:h-[470px] md:max-w-[370px] md:first:ml-[30px]">

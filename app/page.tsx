@@ -27,7 +27,7 @@ import PortfolioV6 from '@/components/homepage-20/PortfolioV6'
 import ProcessV10 from '@/components/homepage-19/ProcessV10'
 
 export const metadata = {
-  title: 'Rivor | Design Agency',
+  title: 'Korea Celebration',
 }
 const servicesData: servicesType[] = getMarkDownData('data/services')
 
