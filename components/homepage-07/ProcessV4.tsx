@@ -45,7 +45,7 @@ const ProcessV4 = () => {
             <span className="rv-badge-text">Event Schedule</span>
           </RevealWrapper>
           <TextAppearAnimation>
-            <h2 className="appear mx-auto max-w-[770px] text-center text-2xl font-semibold leading-tight tracking-tight sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <h2 className="appear mx-auto max-w-[770px] text-center text-2xl  leading-tight tracking-tight sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               National Day of the Republic of Korea
             </h2>
           </TextAppearAnimation>

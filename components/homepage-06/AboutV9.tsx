@@ -45,7 +45,7 @@ const AboutV9 = () => {
 
         <h3
           ref={revealRef}
-          className="text-center space-x-2 text-base font-normal text-secondary/90 dark:text-backgroundBody/70 lg:text-3xl lg:leading-[1.2] lg:tracking-[0.72px] xl:text-4xl">
+          className="space-x-2·text-center text-base font-normal text-secondary/90 dark:text-backgroundBody/70 lg:text-3xl lg:leading-[1.2] lg:tracking-[0.72px] xl:text-4xl">
           The National Day of the Republic of Korea is a time to honor the nation’s rich history, vibrant culture, and
           the enduring spirit of its people. This celebration reflects the shared values of friendship, cooperation, and
           cultural exchange between Korea and nations around the world. From traditional performances and art
