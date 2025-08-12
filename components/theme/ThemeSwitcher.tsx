@@ -7,7 +7,7 @@ const ThemeSwitcher = () => {
   const [mount, setMount] = useState(false)
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === 'system' ? systemTheme : theme
-  
+
   useEffect(() => {
     setMount(true)
     // Set the default theme to dark when component mounts
