@@ -60,7 +60,7 @@ const OurWork = () => {
       </div>
 
       {/* Subtle Korean flag watermark */}
-      <div className="absolute top-0 left-12">
+      <div className="left-12·top-0·absolute">
         <Image
           src={logoDark}
           alt="Flag of the Republic of Korea"
@@ -70,7 +70,7 @@ const OurWork = () => {
           priority={false}
         />
       </div>
-      <div className="absolute top-0 right-12">
+      <div className="right-12·top-0·absolute">
         <Image
           src={logoDark}
           alt="Flag of the Republic of Korea"
