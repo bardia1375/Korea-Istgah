@@ -65,7 +65,7 @@ const Home = () => {
       <ServicesV10 />
       <ServicesV6 />
       {/* <TestimonialV2 /> */}
-      <PortfolioV6 />
+      {/* <PortfolioV6 /> */}
       {/* <ProcessV10 /> */}
       {/* <PricingCard showHeader={true} /> */}
       {/* <CTA showContactForm>
