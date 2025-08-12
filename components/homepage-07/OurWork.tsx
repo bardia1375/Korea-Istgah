@@ -82,11 +82,11 @@ const OurWork = () => {
       </div>
 
       <RevealWrapper>
-        <Marquee speed={50} gradient={false} pauseOnHover={false}>
+        <Marquee speed={50} className="pointer-events-none touch-pan-y md:pointer-events-auto">
           <div className="flex transform-gpu items-center gap-4 will-change-transform md:gap-[30px]">
             {WORK_IMAGES.slice(0, 5).map(({ src, alt, id }) => (
               <div key={id} className="h-72 max-w-60 first:ml-4 md:h-[470px] md:max-w-[370px] md:first:ml-[30px]">
-                <Image src={src} alt={alt} />
+                <Image src={src} alt={alt} className="h-full w-auto object-contain" />
               </div>
             ))}
           </div>
@@ -94,11 +94,11 @@ const OurWork = () => {
       </RevealWrapper>
 
       <RevealWrapper>
-        <Marquee speed={50} gradient={false} pauseOnHover={false} direction="right">
+        <Marquee speed={50} direction="right" className="pointer-events-none touch-pan-y md:pointer-events-auto">
           <div className="flex transform-gpu items-center justify-around gap-4 pt-[30px] will-change-transform md:gap-[30px]">
             {WORK_IMAGES.toReversed().map(({ src, alt, id }) => (
               <div key={id} className="h-72 max-w-60 first:ml-4 md:h-[470px] md:max-w-[370px] md:first:ml-[30px]">
-                <Image src={src} alt={alt} />
+                <Image src={src} alt={alt} className="h-full w-auto object-contain" />
               </div>
             ))}
           </div>
