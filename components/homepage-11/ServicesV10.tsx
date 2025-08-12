@@ -87,7 +87,7 @@ const ServicesV10 = () => {
                     <img
                       src={item.image}
                       alt={item.title}
-                      className=" w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-[320px]"
+                      className="w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-[320px]"
                     />
                   </Link>
                 </figure>
