@@ -60,7 +60,7 @@ const OurWork = () => {
       </div>
 
       {/* Subtle Korean flag watermark */}
-      <div className="left-12·top-0·absolute">
+      <div className="absolute left-12 top-0">
         <Image
           src={logoDark}
           alt="Flag of the Republic of Korea"
@@ -70,7 +70,7 @@ const OurWork = () => {
           priority={false}
         />
       </div>
-      <div className="right-12·top-0·absolute">
+      <div className="absolute right-12 top-0">
         <Image
           src={logoDark}
           alt="Flag of the Republic of Korea"
@@ -82,8 +82,8 @@ const OurWork = () => {
       </div>
 
       <RevealWrapper>
-        <Marquee speed={70}>
-          <div className="flex items-center gap-4 md:gap-[30px]">
+        <Marquee speed={50} gradient={false} pauseOnHover={false}>
+          <div className="flex transform-gpu items-center gap-4 will-change-transform md:gap-[30px]">
             {WORK_IMAGES.slice(0, 5).map(({ src, alt, id }) => (
               <div key={id} className="h-72 max-w-60 first:ml-4 md:h-[470px] md:max-w-[370px] md:first:ml-[30px]">
                 <Image src={src} alt={alt} />
@@ -94,8 +94,8 @@ const OurWork = () => {
       </RevealWrapper>
 
       <RevealWrapper>
-        <Marquee speed={70} direction="right">
-          <div className="flex items-center justify-around gap-4 pt-[30px] md:gap-[30px]">
+        <Marquee speed={50} gradient={false} pauseOnHover={false} direction="right">
+          <div className="flex transform-gpu items-center justify-around gap-4 pt-[30px] will-change-transform md:gap-[30px]">
             {WORK_IMAGES.toReversed().map(({ src, alt, id }) => (
               <div key={id} className="h-72 max-w-60 first:ml-4 md:h-[470px] md:max-w-[370px] md:first:ml-[30px]">
                 <Image src={src} alt={alt} />
