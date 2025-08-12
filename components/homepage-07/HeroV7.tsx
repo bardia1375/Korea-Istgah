@@ -13,7 +13,7 @@ const HeroV7 = () => {
 
       <RevealWrapper className="mx-auto max-w-screen-xl px-5">
         <div>
-          <h1 className="font-normal max-lg:text-center max-sm:text-3xl max-sm:leading-snug max-sm:tracking-normal xl:text-[96px] xl:leading-[1.3] xl:tracking-[-2.88px]">
+          <h1 className="text-2xl font-normal leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight sm:tracking-tight md:text-6xl md:leading-[1.2] md:tracking-[-1px] lg:text-7xl lg:leading-[1.25] lg:tracking-[-2px] xl:text-[96px] xl:leading-[1.3] xl:tracking-[-2.88px]">
             Republic of Korea National Day
             <CtaImageSlider
               slides={[
