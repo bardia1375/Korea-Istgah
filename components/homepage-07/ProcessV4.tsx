@@ -15,23 +15,6 @@ const ProcessV4 = () => {
   const listRef = useRef<HTMLDivElement | null>(null)
   const { revealRef } = useReveal()
 
-  useEffect(() => {
-    const items = listRef.current!.querySelectorAll('.timeline-item')
-    gsap.set(items, { opacity: 0, y: 40 })
-
-    gsap.to(items, {
-      opacity: 1,
-      y: 0,
-      duration: 0.8,
-      ease: 'power2.out',
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: listRef.current!,
-        start: 'top 80%',
-        toggleActions: 'play none none reverse',
-      },
-    })
-  }, [])
 
   const schedule = [
     {
