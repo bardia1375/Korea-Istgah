@@ -1,7 +1,7 @@
 'use client'
 
-import logoDark from '@/public/images/500in200-/korean-flag.png'
-import logo from '@/public/images/500in200-/korean-flag.png'
+import logoDark from '@/public/images/500in200-/South-Korea-m.gif'
+import logo from '@/public/images/500in200-/South-Korea-m.gif'
 import { gsap } from 'gsap'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -288,9 +288,9 @@ export default function Navbar() {
         <nav
           className={`fixed z-[1000] w-full px-5 pt-1 transition duration-300 ease-linear will-change-transform sm:px-8 sm:pt-5 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
           <div className="flex justify-between">
-            <Link href="/" className="relative z-10">
+            <Link href="/" className="fixed z-10">
               <Image
-                className="inline-block max-h-[68px] w-auto dark:hidden"
+                className="mt-4 inline-block max-h-[68px] w-auto dark:hidden"
                 src={logo}
                 alt="logo"
                 width={136}
@@ -298,7 +298,7 @@ export default function Navbar() {
                 priority
               />
               <Image
-                className="hidden max-h-[68px] w-auto dark:inline-block"
+                className="mt-4 hidden max-h-[68px] w-auto dark:inline-block"
                 src={logoDark}
                 alt="logo"
                 width={136}

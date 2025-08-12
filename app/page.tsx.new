@@ -1,0 +1,16 @@
+import LayoutOne from '@/components/shared/LayoutOne'
+import HomeContent from '@/components/homepage-01/HomeContent'
+
+export const metadata = {
+  title: 'Korea Celebration',
+}
+
+const Home = () => {
+  return (
+    <LayoutOne>
+      <HomeContent />
+    </LayoutOne>
+  )
+}
+
+export default Home

@@ -17,8 +17,8 @@ const HeroV7 = () => {
             Republic of Korea National Day
             <CtaImageSlider
               slides={[
-                { id: '1', img: '/images/500in200-/3.webp' },
-                { id: '2', img: '/images/500in200-/4.webp' },
+                { id: '1', img: '/images/500in200-/south korea.gif' },
+                // { id: '2', img: '/images/500in200-/4.webp' },
               ]}
             />
             Honoring the National Day of the Republic of Korea{' '}
