@@ -287,16 +287,16 @@ export default function Navbar() {
         </div>
         <nav
           className={`fixed z-[1000] w-full px-5 pt-1 transition duration-300 ease-linear will-change-transform sm:px-8 sm:pt-5 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-          <div className="flex justify-between border-2 ">
-               <Image
-                className="mt-4 hidden max-h-[68px] w-auto dark:inline-block"
-                src={logoDark}
-                alt="logo"
-                width={136}
-                height={68}
-                priority
-              />
-              {/* <Image
+          <div className="flex justify-between border-2">
+            <Image
+              className="mt-4 hidden max-h-[68px] w-auto dark:inline-block"
+              src={logoDark}
+              alt="logo"
+              width={136}
+              height={68}
+              priority
+            />
+            {/* <Image
                 className="mt-4 inline-block max-h-[68px] w-auto dark:hidden"
                 src={logo}
                 alt="logo"
@@ -304,14 +304,14 @@ export default function Navbar() {
                 height={68}
                 priority
               /> */}
-              <Image
-                className="mt-4 hidden max-h-[68px] w-auto dark:inline-block"
-                src={logoDark}
-                alt="logo"
-                width={136}
-                height={68}
-                priority
-              />
+            <Image
+              className="mt-4 hidden max-h-[68px] w-auto dark:inline-block"
+              src={logoDark}
+              alt="logo"
+              width={136}
+              height={68}
+              priority
+            />
             <div className="flex items-center">
               <button
                 ref={openBtnRef}

@@ -57,14 +57,11 @@ const Home = () => {
       </CTA> */}
       {/* <ClientsV3 /> */}
       {/* <HeroV14 /> */}
-      
-      <HeroV7 />      <Video /> <AboutV9 />
+      <HeroV7 /> <Video /> <AboutV9 />
       <ServicesV10 />
       <ProcessV4 />
-
       <OurWork />
       {/* <ServicesCard servicesData={servicesData} /> */}
-
       <ServicesV6 />
       {/* <TestimonialV2 /> */}
       {/* <PortfolioV6 /> */}

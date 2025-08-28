@@ -15,7 +15,7 @@ const HeroV7 = () => {
 
       <RevealWrapper className="mx-auto max-w-screen-xl px-5">
         <div>
-          <h1 className="text-2xl font-normal leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight sm:tracking-tight md:text-6xl md:leading-[1.2] md:tracking-[-1px] lg:text-5xl lg:leading-[1.25]  xl:leading-[1.3] xl:tracking-[-2.88px]">
+          <h1 className="text-2xl font-normal leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight sm:tracking-tight md:text-6xl md:leading-[1.2] md:tracking-[-1px] lg:text-5xl lg:leading-[1.25] xl:leading-[1.3] xl:tracking-[-2.88px]">
             Embassy of the Republic of Korea in the Islamic Republic of Iran
             <CtaImageSlider
               slides={[
@@ -24,8 +24,10 @@ const HeroV7 = () => {
               ]}
             />
           </h1>
-          <h2 className="text-lg  leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight ">            Commemorating the National Day of the Republic of Korea
-</h2>
+          <h2 className="text-lg leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight">
+            {' '}
+            Commemorating the National Day of the Republic of Korea
+          </h2>
         </div>
 
         <p className="mt-10 max-w-[770px] font-normal max-lg:mx-auto">
@@ -39,8 +41,6 @@ const HeroV7 = () => {
       <SkewMarquee />
 
       <HeroAbout />
-
-
     </section>
   )
 }

@@ -50,9 +50,9 @@ const Video = () => {
   return (
     <section className="video-section">
       <div ref={videoRef} className="h-fit w-full origin-top scale-50">
-            <RevealWrapperV2 as="figure" className="reveal-me mb-8 w-full">
-              <Image src={hero01} alt="Hero Img 01" className="w-full" />
-            </RevealWrapperV2>
+        <RevealWrapperV2 as="figure" className="reveal-me mb-8 w-full">
+          <Image src={hero01} alt="Hero Img 01" className="w-full" />
+        </RevealWrapperV2>
         {/* <video className="h-full w-full" autoPlay muted loop playsInline>
           <source src="/video/Istgahkorea.mp4" type="video/mp4" />
           Your browser does not support the video tag.

@@ -39,8 +39,7 @@ const AboutV9 = () => {
           <TextAppearAnimation>
             <h2
               ref={gsapRef}
-              className="mb-10 mt-4 text-center text-3xl font-extrabold leading-snug text-gray-800 md:text-4xl lg:text-5xl"
-            >
+              className="mb-10 mt-4 text-center text-3xl font-extrabold leading-snug text-gray-800 md:text-4xl lg:text-5xl">
               Celebrating the National Day of
               <br className="hidden md:block" />
               the Republic of Korea
@@ -50,8 +49,7 @@ const AboutV9 = () => {
 
         <div
           ref={revealRef}
-          className="mx-auto max-w-3xl space-y-8 rounded-2xl bg-white/70 p-8 shadow-lg backdrop-blur-md dark:bg-gray-900/70"
-        >
+          className="mx-auto max-w-3xl space-y-8 rounded-2xl bg-white/70 p-8 shadow-lg backdrop-blur-md dark:bg-gray-900/70">
           {/* بخش ۱ */}
           <div className="border-l-4 border-red-500 pl-4">
             <h3 className="text-lg font-semibold text-red-700">1. Guest Arrival and Welcome Ceremony</h3>
@@ -69,7 +67,7 @@ const AboutV9 = () => {
 
           {/* بخش ۳ */}
           <div className="border-l-4 border-red-500 pl-4">
-            <h3 className="text-lg font-semibold  text-red-700">3. Musical Performance</h3>
+            <h3 className="text-lg font-semibold text-red-700">3. Musical Performance</h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">Istgah Orchestra</p>
           </div>
 
