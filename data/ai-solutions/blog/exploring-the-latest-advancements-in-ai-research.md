@@ -1,9 +1,9 @@
 ---
-featureImage: '/images/blog-img/blog-details-img-1.png'
+thumbnail: '/images/1152in1697.webp'
+featureImage: '/images/1152in1697.webp'
 description: 'Understand how AI and automation are reshaping the advertising landscape with smarter more efficient campaigns.'
 badge: 'AI Research'
 title: 'Exploring the latest advancements in AI research'
-thumbnail: '/images/home-ai/ai-slider-img-2.jpg'
 ---
 
 ### Get to Know the Project – Overview & Highlights

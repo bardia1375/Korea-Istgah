@@ -1,7 +1,7 @@
 ---
-thumbnail: '/images/home-ai/ai-slider-img-1.jpg'
-featureImage: '/images/blog-img/blog-details-img-1.png'
-title: 'AI powered telemedicine for remote healthcare'
+thumbnail: '/images/1152in1697.webp'
+featureImage: '/images/1152in1697.webp'
+title: 'AIdfv powered telemedicine for remote healthcare'
 description: 'Understand how AI and automation are reshaping the advertising landscape with smarter, more efficient campaigns.'
 badge: 'Telemedicine AI'
 ---

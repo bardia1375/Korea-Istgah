@@ -65,10 +65,10 @@ const ProcessV4 = () => {
                       {String(index + 1).padStart(2, '0')}
                     </span>
                   </div>
-                  <div className="ml-[30px]">
-                    <h3 className="text-2xl">{item.title}</h3>
-                    <p className="mt-5 max-w-[483px] text-sm">{item.desc}</p>
-                  </div>
+                  {/* <div className="ml-[30px]"> */}
+                  {/* <h3 className="text-2xl">{item.title}</h3> */}
+                  {/* <p className="mt-5 max-w-[483px] text-sm">{item.desc}</p> */}
+                  {/* </div> */}
                 </li>
               ))}
             </ul>

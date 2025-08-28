@@ -25,11 +25,14 @@ import ServicesV10 from '@/components/homepage-11/ServicesV10'
 import HeroV14 from '@/components/homepage-14/HeroV14'
 import PortfolioV6 from '@/components/homepage-20/PortfolioV6'
 import ProcessV10 from '@/components/homepage-19/ProcessV10'
+import TestimonialV5 from '@/components/homepage-04/TestimonialV5'
+import BlogPostV7 from '@/components/homepage-12/BlogPostV7'
 
 export const metadata = {
   title: 'Korea Celebration',
 }
 const servicesData: servicesType[] = getMarkDownData('data/services')
+const blogPosts = getMarkDownData('data/ai-solutions/blog')
 
 const Home = () => {
   return (
@@ -59,10 +62,11 @@ const Home = () => {
       {/* <HeroV14 /> */}
       <HeroV7 /> <Video /> <AboutV9 />
       <ServicesV10 />
-      <ProcessV4 />
+      {/* <ProcessV4 /> */}
       <OurWork />
       {/* <ServicesCard servicesData={servicesData} /> */}
-      <ServicesV6 />
+      <ServicesV6 /> <TestimonialV5 />
+      <BlogPostV7 posts={blogPosts} />
       {/* <TestimonialV2 /> */}
       {/* <PortfolioV6 /> */}
       {/* <ProcessV10 /> */}
