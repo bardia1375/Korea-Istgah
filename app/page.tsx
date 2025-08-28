@@ -28,6 +28,8 @@ import ProcessV10 from '@/components/homepage-19/ProcessV10'
 import TestimonialV5 from '@/components/homepage-04/TestimonialV5'
 import BlogPostV7 from '@/components/homepage-12/BlogPostV7'
 import VideoV2 from '@/components/shared/VideoV2'
+import VideoV3 from '@/components/shared/VideoV3'
+
 import TestimonialV6 from '@/components/homepage-04/TestimonialV6'
 import TestimonialV7 from '@/components/homepage-04/TestimonialV7'
 
@@ -72,6 +74,7 @@ const Home = () => {
       {/* <ProcessV4 /> */}
       <OurWork />
       <VideoV2 />
+      <VideoV3 />
       {/* <ServicesCard servicesData={servicesData} /> */}
       {/* <ServicesV6 /> */}
       
