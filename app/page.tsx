@@ -27,6 +27,9 @@ import PortfolioV6 from '@/components/homepage-20/PortfolioV6'
 import ProcessV10 from '@/components/homepage-19/ProcessV10'
 import TestimonialV5 from '@/components/homepage-04/TestimonialV5'
 import BlogPostV7 from '@/components/homepage-12/BlogPostV7'
+import VideoV2 from '@/components/shared/VideoV2'
+import TestimonialV6 from '@/components/homepage-04/TestimonialV6'
+import TestimonialV7 from '@/components/homepage-04/TestimonialV7'
 
 export const metadata = {
   title: 'Korea Celebration',
@@ -37,7 +40,7 @@ const blogPosts = getMarkDownData('data/ai-solutions/blog')
 const Home = () => {
   return (
     <LayoutOne>
-      {/* <Hero />
+      {/* <Hero />s
       <Video />
       <About />
       <Portfolio />
@@ -60,13 +63,22 @@ const Home = () => {
       </CTA> */}
       {/* <ClientsV3 /> */}
       {/* <HeroV14 /> */}
-      <HeroV7 /> <Video /> <AboutV9 />
-      <ServicesV10 />
+      <HeroV7 /> 
+      <Video />
+      <AboutV9 />
+
+      <ServicesV10 />           
+      <BlogPostV7 posts={blogPosts} />
       {/* <ProcessV4 /> */}
       <OurWork />
+      <VideoV2 />
       {/* <ServicesCard servicesData={servicesData} /> */}
-      <ServicesV6 /> <TestimonialV5 />
-      <BlogPostV7 posts={blogPosts} />
+      {/* <ServicesV6 /> */}
+      
+       <TestimonialV5 />
+      <TestimonialV6 />
+       <TestimonialV7 />
+
       {/* <TestimonialV2 /> */}
       {/* <PortfolioV6 /> */}
       {/* <ProcessV10 /> */}

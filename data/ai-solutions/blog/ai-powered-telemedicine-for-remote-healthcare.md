@@ -1,9 +1,7 @@
 ---
-thumbnail: '/images/1152in1697.webp'
-featureImage: '/images/1152in1697.webp'
+thumbnail: '/images/1152in1698/p1.webp'
+featureImage: '/images/1152in1698/p1.webp'
 title: 'AIdfv powered telemedicine for remote healthcare'
-description: 'Understand how AI and automation are reshaping the advertising landscape with smarter, more efficient campaigns.'
-badge: 'Telemedicine AI'
 ---
 
 ### Get to Know the Project – Overview & Highlights

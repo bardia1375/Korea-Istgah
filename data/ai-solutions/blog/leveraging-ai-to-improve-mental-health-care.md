@@ -1,9 +1,10 @@
 ---
-featureImage: '/images/blog-img/blog-details-img-1.png'
+# featureImage: '/images/blog-img/blog-details-img-1.png'
 description: 'Understand how AI and automation are reshaping the advertising landscape with smarter more efficient campaigns.'
 badge: 'AI Mental Health'
 title: 'Leveraging AI to improve mental health care'
-thumbnail: '/images/home-ai/ai-slider-img-4.png'
+thumbnail: '/images/1152in1698/p4.webp'
+featureImage: '/images/1152in1698/p4.webp'
 ---
 
 ### Get to Know the Project – Overview & Highlights

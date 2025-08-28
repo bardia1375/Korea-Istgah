@@ -17,6 +17,12 @@ interface BlogPostV7Props {
 const BlogPostV7: FC<BlogPostV7Props> = ({ posts }) => {
   return (
     <section className="pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
+               <div className=" w-full flex justify-center">
+           <RevealWrapper className=" rv-badge mb-8">
+            <span className="rv-badge-text">Event Program</span>
+          </RevealWrapper>
+          </div>
+
       <RevealWrapper>
         <Swiper
           className="!pl-[20%]"
@@ -46,28 +52,29 @@ const BlogPostV7: FC<BlogPostV7Props> = ({ posts }) => {
               spaceBetween: 24,
             },
           }}>
+            
           {posts.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="group relative h-auto max-w-[385px]">
                 <Link href={`/ai-solutions/blog/${item.slug}`}>
                   <figure className="overflow-hidden">
-                    <img
-                      src={item?.thumbnail}
-                      alt={item?.title}
-                      className="block h-full w-full object-cover transition-all duration-500 group-hover:rotate-3 group-hover:scale-125"
-                    />
+<img
+  src={item?.thumbnail}
+  alt={item?.title}
+  className="block h-full w-full object-cover transition-all duration-500"
+/>
                   </figure>
                   <div className="absolute bottom-7 left-7">
-                    <div className="mb-3 inline-block rounded-[72px] bg-backgroundBody/30 text-white">
+                    {/* <div className="mb-3 inline-block rounded-[72px] bg-backgroundBody/30 text-white">
                       <span className="inline-block px-[17px] py-2 text-xs font-medium uppercase tracking-[0.96px] text-backgroundBody">
                         {item?.badge}
                       </span>
-                    </div>
-                    <div className="team-title">
+                    </div> */}
+                    {/* <div className="team-title">
                       <h3 className="max-w-[304px] text-[22px] text-white lg:text-4xl lg:leading-[1.2] lg:-tracking-[1.08px]">
                         {item?.title}
                       </h3>
-                    </div>
+                    </div> */}
                   </div>
                 </Link>
               </div>

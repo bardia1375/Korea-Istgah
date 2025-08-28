@@ -1,8 +1,8 @@
 ---
-thumbnail: '/images/1152in1697.webp'
-featureImage: '/images/1152in1697.webp'
-description: 'Understand how AI and automation are reshaping the advertising landscape with smarter more efficient campaigns.'
-badge: 'AI Diagnostics'
+thumbnail: '/images/1152in1698/p3.webp'
+featureImage: '/images/1152in1698/p3.webp'
+# description: 'Understand how AI and automation are reshaping the advertising landscape with smarter more efficient campaigns.'
+# badge: 'AI Diagnostics'
 title: 'How AI is revolutionizing medical diagnostics'
 ---
 

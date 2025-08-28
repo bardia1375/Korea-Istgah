@@ -51,7 +51,7 @@ const OurWork = () => {
       <div className="container">
         <div className="mb-8 text-center md:mb-20">
           <RevealWrapper className="rv-badge reveal-me mb-5 md:mb-8">
-            <span className="rv-badge-text">Our Work</span>
+            <span className="rv-badge-text">Korea && Istgah</span>
           </RevealWrapper>
           <TextAppearAnimation>
             <h2 className="appear·mx-auto·max-w-[770px]·text-2xl">We craft emotionally engaging stories.</h2>

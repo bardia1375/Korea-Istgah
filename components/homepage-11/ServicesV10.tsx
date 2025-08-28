@@ -65,7 +65,7 @@ const ServicesV10 = () => {
           </RevealWrapper>
           <TextAppearAnimation>
             <h2 className="text-appear my-3">
-              Bringing your <i className="font-instrument">vision to life</i>
+              
             </h2>
           </TextAppearAnimation>
 

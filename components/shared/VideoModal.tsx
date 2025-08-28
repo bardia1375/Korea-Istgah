@@ -108,7 +108,7 @@ const VideoModal: FC<VideoModalProps> = ({
           <div ref={videoIframeContainerRef} className="h-full w-full">
             {open && (
               <iframe
-                src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                src={`https://mahdi-norouzi.storage.c2.liara.space/%DA%A9%D9%85%20%D8%AD%D8%AC%D9%85.mp4`}
                 title="YouTube video player"
                 className="h-full w-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

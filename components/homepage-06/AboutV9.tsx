@@ -29,12 +29,13 @@ const AboutV9 = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b pb-20 pt-12">
       <div className="container">
-        <div className="text-center">
-          <RevealWrapper className="rv-badge mx-auto mb-4">
-            <span className="rv-badge-text text-sm uppercase tracking-widest text-blue-600">
-              Highlights of the Celebration
-            </span>
+        <div >
+         {/* <div className=" w-full flex justify-center">
+           <RevealWrapper className=" rv-badge mb-8">
+            <span className="rv-badge-text">     Highlights of the Celebration</span>
           </RevealWrapper>
+          </div> */}
+
 
           <TextAppearAnimation>
             <h2

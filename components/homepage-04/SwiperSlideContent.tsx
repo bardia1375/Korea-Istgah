@@ -13,7 +13,7 @@ interface SwiperSlideContentProps {
 
 const SwiperSlideContent: FC<SwiperSlideContentProps> = ({ feedback, name, position, img }) => {
   return (
-    <div className="flex flex-col content-between items-start gap-y-5 md:flex-row md:space-x-10">
+    <div className="flex flex-col content-between items-start gap-y-5 md:flex-row md:space-x-10 text-justify">
       <Image
         src={img}
         alt="User"

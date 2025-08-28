@@ -1,9 +1,7 @@
 'use client'
-import userImg1 from '@/public/images/370in370/The Jongmyo Jerye.webp'
-import userImg2 from '@/public/images/370in370/The Hanbok.webp'
-import userImg3 from '@/public/images/370in370/Pansori.webp'
-import userImg4 from '@/public/images/370in370/Hunminjeongeum1.webp'
-
+import userImg2 from '@/public/images/370in370/Kimchi.webp'
+import userImg1 from '@/public/images/370in370/Bibimbap.webp'
+import userImg3 from '@/public/images/370in370/Bulgogi.webp'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import { Autoplay, Navigation } from 'swiper/modules'
@@ -11,39 +9,29 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperSlideContent from './SwiperSlideContent'
 
 const userFeedback = [
-
   {
     id: 1,
     feedback:
-      'The Jongmyo Jerye, Korea’s oldest Confucian royal ancestral ritual established in 1392, is solemnly observed each year in Seoul. Accompanied by orchestral music (Jerye-ak) and traditional dances (munmu and mumu), it honors the kings and queens of the Joseon dynasty, preserving its authentic form for more than five centuries as a distinguished synthesis of ritual, music, and art.',
-    name: 'Culture',
-    position: 'The Jongmyo Jerye',
+      'Kimchi, Korea’s iconic fermented dish with a history of over two millennia, stands as a symbol of the nation’s identity and nutrition. While cabbage kimchi is the most common variety, numerous types are also prepared with radish, cucumber, and other vegetables. Today, kimchi is not only a staple of Korean dining but also recognized globally as an Intangible Cultural Heritage.',
+    name: 'Food',
+    position: 'Kimchi',
     img: userImg1,
   },
-
   {
     id: 2,
     feedback:
-      'The Hanbok, Korea’s traditional attire, traces its origins to the Three Kingdoms period (Goguryeo, Baekje, and Silla) and reached its refinement during the Goryeo and Joseon dynasties. With a history spanning over a millennium, it embodies dignity, simplicity, and the cultural identity of the Korean people, and continues to hold an honored place in national ceremonies and traditional celebrations.',
-    name: 'Culture',
-    position: 'The Hanbok',
+      'Bibimbap, a traditional Korean dish with centuries of history, is a harmonious blend of rice, vegetables, meat, and egg, mixed with red chili paste (gochujang) before eating. With regional variations such as Jeonju and Jinju bibimbap, it has become an international symbol of Korea’s culinary balance and diversity.',
+    name: 'Food',
+    position: 'Bibimbap',
     img: userImg2,
   },
-    {
+  {
     id: 3,
     feedback:
-      'Pansori, a traditional Korean art form established in the 18th century, is an epic musical storytelling genre where a vocalist, accompanied by a drummer, unites song (sori), gestures (ballim), and narrative (aniri) to dramatize folk tales and historic events—an enduring performance tradition that continues to captivate audiences.',
-    name: 'Culture',
-    position: 'Pansori',
+      'Bulgogi, a traditional Korean dish with a history of over a millennium, consists of marinated beef grilled or cooked in a savory blend of soy sauce, garlic, and sesame. With variations ranging from charcoal-grilled to stew-style, bulgogi has become one of the most renowned ambassadors of Korean cuisine worldwide.',
+    name: 'Food',
+    position: 'Bulgogi',
     img: userImg3,
-  },
-      {
-    id: 4,
-    feedback:
-      'Hunminjeongeum, the Korean alphabet created by King Sejong in 1446, was designed based on vocal organs and explained in the Haeryebon; it opened literacy to all people, including women and lower classes, and while it originally had 28 letters, 24 remain in use today, with the manuscript registered by UNESCO as a Memory of the World.',
-    name: 'Culture',
-    position: 'Hunminjeongeum',
-    img: userImg4,
   },
 ]
 
@@ -51,7 +39,7 @@ const TestimonialV5 = () => {
   return (
     <section className="pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container relative">
-        <h2 className="text-appear mb-9 text-center font-semibold md:mb-14">Culture & Traditions</h2>
+        <h2 className="text-appear mb-9 text-center font-semibold md:mb-14">K-Food</h2>
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={40}

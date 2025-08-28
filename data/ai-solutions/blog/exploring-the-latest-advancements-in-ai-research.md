@@ -1,8 +1,8 @@
 ---
-thumbnail: '/images/1152in1697.webp'
-featureImage: '/images/1152in1697.webp'
-description: 'Understand how AI and automation are reshaping the advertising landscape with smarter more efficient campaigns.'
-badge: 'AI Research'
+thumbnail: '/images/1152in1698/p2.webp'
+featureImage: '/images/1152in1698/p2.webp'
+# description: 'Understand how AI and automation are reshaping the advertising landscape with smarter more efficient campaigns.'
+# badge: 'AI Research'
 title: 'Exploring the latest advancements in AI research'
 ---
 
