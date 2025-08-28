@@ -11,7 +11,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperSlideContent from './SwiperSlideContent'
 
 const userFeedback = [
-
   {
     id: 1,
     feedback:
@@ -29,7 +28,7 @@ const userFeedback = [
     position: 'The Hanbok',
     img: userImg2,
   },
-    {
+  {
     id: 3,
     feedback:
       'Pansori, a traditional Korean art form established in the 18th century, is an epic musical storytelling genre where a vocalist, accompanied by a drummer, unites song (sori), gestures (ballim), and narrative (aniri) to dramatize folk tales and historic events—an enduring performance tradition that continues to captivate audiences.',
@@ -37,7 +36,7 @@ const userFeedback = [
     position: 'Pansori',
     img: userImg3,
   },
-      {
+  {
     id: 4,
     feedback:
       'Hunminjeongeum, the Korean alphabet created by King Sejong in 1446, was designed based on vocal organs and explained in the Haeryebon; it opened literacy to all people, including women and lower classes, and while it originally had 28 letters, 24 remain in use today, with the manuscript registered by UNESCO as a Memory of the World.',

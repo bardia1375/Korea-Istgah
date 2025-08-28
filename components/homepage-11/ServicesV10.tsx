@@ -64,9 +64,7 @@ const ServicesV10 = () => {
             <span className="rv-badge-text">Services</span>
           </RevealWrapper>
           <TextAppearAnimation>
-            <h2 className="text-appear my-3">
-              
-            </h2>
+            <h2 className="text-appear my-3"></h2>
           </TextAppearAnimation>
 
           <RevealWrapper as="p">

@@ -65,11 +65,11 @@ const Home = () => {
       </CTA> */}
       {/* <ClientsV3 /> */}
       {/* <HeroV14 /> */}
-      <HeroV7 /> 
+      <HeroV7 />
       <Video />
       <AboutV9 />
 
-      <ServicesV10 />           
+      <ServicesV10 />
       <BlogPostV7 posts={blogPosts} />
       {/* <ProcessV4 /> */}
       <OurWork />
@@ -77,10 +77,10 @@ const Home = () => {
       <VideoV3 />
       {/* <ServicesCard servicesData={servicesData} /> */}
       {/* <ServicesV6 /> */}
-      
-       <TestimonialV5 />
+
+      <TestimonialV5 />
       <TestimonialV6 />
-       <TestimonialV7 />
+      <TestimonialV7 />
 
       {/* <TestimonialV2 /> */}
       {/* <PortfolioV6 /> */}

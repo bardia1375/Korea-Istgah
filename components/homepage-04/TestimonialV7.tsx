@@ -35,7 +35,7 @@ const userFeedback = [
     position: 'Busan',
     img: userImg3,
   },
-    {
+  {
     id: 4,
     feedback:
       'Jeju Island, a UNESCO-designated natural heritage site formed millions of years ago, is celebrated for its volcanic landscapes and natural wonders, standing as one of Korea’s most iconic and treasured destinations.',
