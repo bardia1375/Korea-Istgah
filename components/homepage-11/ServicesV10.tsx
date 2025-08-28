@@ -11,7 +11,7 @@ const data = [
     title: 'Seoul Tower',
     description:
       'The image features the N Seoul Tower (also known as Namsan Seoul Tower or Namsan Tower), a prominent landmark in Seoul, South Korea. The tower is surrounded by blooming cherry blossoms, indicating that the photo was likely taken during springtime, a popular time for viewing these flowers in Seoul.',
-    image: '/images/370in561-/1.webp',
+    image: '/images/370in561-/7.webp',
   },
 
   {
@@ -19,38 +19,38 @@ const data = [
     title: 'Corporate & brand films',
     description:
       'It implies a combination of capabilities and specialized skills, which could be technical or procedural.',
-    image: '/images/370in561-/2.webp',
+    image: '/images/370in561-/8.webp',
   },
   {
     id: 3,
     title: 'Live streaming',
     description: 'It emphasizes professionalism and the depth of experience across various services or specialties.',
-    image: '/images/370in561-/3.webp',
+    image: '/images/370in561-/9.webp',
   },
   {
     id: 4,
     title: 'Music videos',
     description: 'Music videos that capture the essence of your sound and vision.',
-    image: '/images/370in561-/4.webp',
+    image: '/images/370in561-/10.webp',
   },
   {
     id: 5,
     title: 'Documentary films',
     description: 'Capturing real stories and experiences through the art of filmmaking.',
-    image: '/images/370in561-/2.webp',
+    image: '/images/370in561-/11.webp',
   },
   {
     id: 6,
     title: 'Event coverage',
     description: 'Providing comprehensive coverage of your events with a professional touch.',
-    image: '/images/370in561-/5.webp',
+    image: '/images/370in561-/12.webp',
   },
-  {
-    id: 7,
-    title: 'Promotional videos',
-    description: 'Creating compelling promotional videos to showcase your brand and products.',
-    image: '/images/370in561-/6.webp',
-  },
+  // {
+  //   id: 7,
+  //   title: 'Promotional videos',
+  //   description: 'Creating compelling promotional videos to showcase your brand and products.',
+  //   image: '/images/370in561-/6.webp',
+  // },
 ]
 
 const ServicesV10 = () => {
@@ -91,8 +91,8 @@ const ServicesV10 = () => {
                     />
                   </Link>
                 </figure>
-                <h3 className="mb-2.5 mt-[30px] text-2xl leading-[1.1] tracking-normal md:text-[32px]">{item.title}</h3>
-                <p className="max-w-[95%] text-base leading-[1.6] tracking-[0.32px]">{item.description}</p>
+                {/* <h3 className="mb-2.5 mt-[30px] text-2xl leading-[1.1] tracking-normal md:text-[32px]">{item.title}</h3> */}
+                {/* <p className="max-w-[95%] text-base leading-[1.6] tracking-[0.32px]">{item.description}</p> */}
               </div>
             ))}
           </div>

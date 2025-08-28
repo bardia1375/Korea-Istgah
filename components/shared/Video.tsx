@@ -4,6 +4,9 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef } from 'react'
+import RevealWrapperV2 from '../animation/RevealWrapperV2'
+import Image from 'next/image'
+import hero01 from '@/public/images/699in420/699in420.webp'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -47,10 +50,13 @@ const Video = () => {
   return (
     <section className="video-section">
       <div ref={videoRef} className="h-fit w-full origin-top scale-50">
-        <video className="h-full w-full" autoPlay muted loop playsInline>
+            <RevealWrapperV2 as="figure" className="reveal-me mb-8 w-full">
+              <Image src={hero01} alt="Hero Img 01" className="w-full" />
+            </RevealWrapperV2>
+        {/* <video className="h-full w-full" autoPlay muted loop playsInline>
           <source src="/video/Istgahkorea.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
       </div>
     </section>
   )

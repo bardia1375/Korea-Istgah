@@ -17,12 +17,10 @@ const HeroAbout = ({ spacingTop }: PropsTypes) => {
       </h3>
     </RevealWrapper>
   ) : (
-    <RevealWrapper as="section" className="container">
-      <h3 ref={revealRef}>
-        We proudly celebrate the vibrant traditions, cultural heritage, and enduring friendship of the Republic of
-        Korea.
-      </h3>
-    </RevealWrapper>
+<RevealWrapper className="rv-badge absolute ">
+  <span className="rv-badge-text">Highlights of the Celebration</span>
+</RevealWrapper>
+
   )
 }
 

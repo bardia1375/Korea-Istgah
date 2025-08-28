@@ -2,13 +2,11 @@
 import useReveal from '@/hooks/useReveal'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import Link from 'next/link'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 
 const AboutV9 = () => {
   const { revealRef } = useReveal()
-
   const gsapRef = useRef<HTMLHeadingElement>(null)
 
   useEffect(() => {
@@ -27,15 +25,22 @@ const AboutV9 = () => {
       )
     }
   }, [])
+
   return (
-    <section className="relative overflow-hidden pb-14 pt-6 md:pb-16 lg:pb-[88px] lg:pt-12 xl:pb-[100px]">
+    <section className="relative overflow-hidden bg-gradient-to-b pb-20 pt-12">
       <div className="container">
         <div className="text-center">
-          <RevealWrapper className="rv-badge">
-            <span className="rv-badge-text">About Celebration</span>
+          <RevealWrapper className="rv-badge mx-auto mb-4">
+            <span className="rv-badge-text text-sm uppercase tracking-widest text-blue-600">
+              Highlights of the Celebration
+            </span>
           </RevealWrapper>
+
           <TextAppearAnimation>
-            <h2 ref={gsapRef} className="text-appear mb-8 mt-3 text-center text-2xl">
+            <h2
+              ref={gsapRef}
+              className="mb-10 mt-4 text-center text-3xl font-extrabold leading-snug text-gray-800 md:text-4xl lg:text-5xl"
+            >
               Celebrating the National Day of
               <br className="hidden md:block" />
               the Republic of Korea
@@ -43,28 +48,37 @@ const AboutV9 = () => {
           </TextAppearAnimation>
         </div>
 
-        <h3
+        <div
           ref={revealRef}
-          className="space-x-2·text-center text-base font-normal text-secondary/90 dark:text-backgroundBody/70 lg:text-3xl lg:leading-[1.2] lg:tracking-[0.72px] xl:text-4xl">
-          The National Day of the Republic of Korea is a time to honor the nation’s rich history, vibrant culture, and
-          the enduring spirit of its people. This celebration reflects the shared values of friendship, cooperation, and
-          cultural exchange between Korea and nations around the world. From traditional performances and art
-          exhibitions to culinary experiences, the event is a tribute to the heritage and progress of Korea, fostering
-          deeper understanding and stronger connections
-        </h3>
-        {/* 
-        <RevealWrapper as="ul" className="mx-auto mt-[56px] flex list-none justify-center">
-          <li className="mx-auto block w-full text-center md:inline-block md:w-auto">
-            <Link  href="/team" className="rv-button rv-button-white block md:inline-block">
-              <div className="rv-button-top">
-                <span>Meet the Team</span>
-              </div>
-              <div className="rv-button-bottom">
-                <span>Meet the Team</span>
-              </div>
-            </Link>
-          </li>
-        </RevealWrapper> */}
+          className="mx-auto max-w-3xl space-y-8 rounded-2xl bg-white/70 p-8 shadow-lg backdrop-blur-md dark:bg-gray-900/70"
+        >
+          {/* بخش ۱ */}
+          <div className="border-l-4 border-red-500 pl-4">
+            <h3 className="text-lg font-semibold text-red-700">1. Guest Arrival and Welcome Ceremony</h3>
+            <ul className="mt-2 list-disc pl-6 text-gray-700 dark:text-gray-300">
+              <li>National Anthems of the Republic of Korea and the Islamic Republic of Iran</li>
+              <li>Opening Remarks by H.E. the Ambassador of the Republic of Korea</li>
+            </ul>
+          </div>
+
+          {/* بخش ۲ */}
+          <div className="border-l-4 border-blue-500 pl-4">
+            <h3 className="text-lg font-semibold text-blue-700">2. Korean Cultural Experience</h3>
+            <p className="mt-2 text-gray-700 dark:text-gray-300">Traditional Korean Cuisine</p>
+          </div>
+
+          {/* بخش ۳ */}
+          <div className="border-l-4 border-red-500 pl-4">
+            <h3 className="text-lg font-semibold  text-red-700">3. Musical Performance</h3>
+            <p className="mt-2 text-gray-700 dark:text-gray-300">Istgah Orchestra</p>
+          </div>
+
+          {/* بخش ۴ */}
+          <div className="border-l-4 border-blue-500 pl-4">
+            <h3 className="text-lg font-semibold text-blue-700">4. Taekwondo Demonstration</h3>
+            <p className="mt-2 text-gray-700 dark:text-gray-300">Takavaran Taekwondo Performance Group</p>
+          </div>
+        </div>
       </div>
     </section>
   )
