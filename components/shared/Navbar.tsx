@@ -312,18 +312,18 @@ export default function Navbar() {
               height={68}
               priority
             />
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <button
                 ref={openBtnRef}
                 onClick={openMenu}
                 className="menu-open relative h-[68px] w-[68px] cursor-pointer before:absolute before:left-1/2 before:top-[28px] before:h-0.5 before:w-9 before:-translate-x-1/2 before:bg-black before:transition-all before:duration-300 before:content-[''] after:absolute after:bottom-[28px] after:left-1/2 after:h-0.5 after:w-9 after:-translate-x-1/2 after:bg-black after:transition-all after:duration-300 after:content-[''] hover:before:top-[25px] hover:after:bottom-[25px] dark:before:bg-white dark:after:bg-white"
                 aria-label="Open Menu"></button>
-            </div>
+            </div> */}
           </div>
         </nav>
       </header>
 
-      <nav
+      {/* <nav
         ref={menuRef}
         data-lenis-prevent="true"
         className="menu fixed right-6 top-0 z-[99999] min-h-screen w-full overflow-y-auto opacity-0 before:absolute before:top-0 before:w-[1px] before:bg-backgroundBody before:bg-opacity-10 before:content-none md:before:left-[40%] md:before:h-screen md:before:content-[''] lg:before:left-[32%] lg:before:h-[calc(100vh-87px)] xl:before:left-[40%] xl:before:h-[calc(100vh-94px)]">
@@ -350,7 +350,7 @@ export default function Navbar() {
             <SocialIcons />
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       <div
         ref={menuOverflowRef}
