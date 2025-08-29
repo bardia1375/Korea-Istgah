@@ -15,7 +15,7 @@ const userFeedback = [
       'Kimchi, Korea’s iconic fermented dish with a history of over two millennia, stands as a symbol of the nation’s identity and nutrition. While cabbage kimchi is the most common variety, numerous types are also prepared with radish, cucumber, and other vegetables. Today, kimchi is not only a staple of Korean dining but also recognized globally as an Intangible Cultural Heritage.',
     name: 'Food',
     position: 'Kimchi',
-    img: userImg1,
+    img: userImg2,
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const userFeedback = [
       'Bibimbap, a traditional Korean dish with centuries of history, is a harmonious blend of rice, vegetables, meat, and egg, mixed with red chili paste (gochujang) before eating. With regional variations such as Jeonju and Jinju bibimbap, it has become an international symbol of Korea’s culinary balance and diversity.',
     name: 'Food',
     position: 'Bibimbap',
-    img: userImg2,
+    img: userImg1,
   },
   {
     id: 3,

@@ -70,7 +70,7 @@ const Home = () => {
       <AboutV9 />
 
       <ServicesV10 />
-      <BlogPostV7 posts={blogPosts} />
+      {/* <BlogPostV7 posts={blogPosts} /> */}
       {/* <ProcessV4 /> */}
       <OurWork />
       <VideoV2 />
