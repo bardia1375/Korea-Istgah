@@ -17,9 +17,7 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
     <RevealWrapper as="section" className="video-section overflow-hidden pb-14 md:pb-16 lg:pb-[88px] xl:pb-[112px]">
       <div className="flex w-full justify-center">
         <RevealWrapper className="rv-badge mb-8">
-          <span  className="rv-badge-text">
-            Musical Performance (Korea && Istgah){' '}
-          </span>
+          <span className="rv-badge-text">Musical Performance (Korea && Istgah) </span>
         </RevealWrapper>
       </div>
       <RevealWrapper ref={revealRef} className="mb-8">

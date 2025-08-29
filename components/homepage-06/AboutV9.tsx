@@ -78,7 +78,7 @@ const AboutV9 = () => {
             href={'/eventProgram'}
             onClick={() => setIsOpen(true)}
             className="tab-button active border-y border-l text-center text-base font-medium uppercase leading-[1.1] tracking-[1.12px] dark:border-transparent dark:bg-backgroundBody/90 dark:text-secondary max-md:px-10 max-md:py-5 md:px-16 md:py-8">
-            EVENT PROGRAM
+            Read More
           </Link>
         </RevealWrapper>
       </div>
