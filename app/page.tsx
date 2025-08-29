@@ -68,20 +68,16 @@ const Home = () => {
       <HeroV7 />
       <Video />
       <AboutV9 />
-
-      <ServicesV10 />      <VideoV2 />
+      <ServicesV10 /> <VideoV2 />
       {/* <BlogPostV7 posts={blogPosts} /> */}
       {/* <ProcessV4 /> */}
       <OurWork />
-
       <VideoV3 />
       {/* <ServicesCard servicesData={servicesData} /> */}
       {/* <ServicesV6 /> */}
-
       <TestimonialV5 />
       <TestimonialV6 />
       <TestimonialV7 />
-
       {/* <TestimonialV2 /> */}
       {/* <PortfolioV6 /> */}
       {/* <ProcessV10 /> */}
