@@ -69,11 +69,11 @@ const Home = () => {
       <Video />
       <AboutV9 />
 
-      <ServicesV10 />
+      <ServicesV10 />      <VideoV2 />
       {/* <BlogPostV7 posts={blogPosts} /> */}
       {/* <ProcessV4 /> */}
       <OurWork />
-      <VideoV2 />
+
       <VideoV3 />
       {/* <ServicesCard servicesData={servicesData} /> */}
       {/* <ServicesV6 /> */}
