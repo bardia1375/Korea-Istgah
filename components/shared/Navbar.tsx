@@ -1,6 +1,7 @@
 'use client'
 
 import logoDark from '@/public/images/500in200-/South-Korea-m.gif'
+import iranLogo from '@/public/images/iran-flag-animation.gif'
 import logo from '@/public/images/500in200-/South-Korea-m.gif'
 import { gsap } from 'gsap'
 import Image from 'next/image'
@@ -306,7 +307,7 @@ export default function Navbar() {
               /> */}
             <Image
               className="mt-4 hidden max-h-[68px] w-auto dark:inline-block"
-              src={logoDark}
+              src={iranLogo}
               alt="logo"
               width={136}
               height={68}
