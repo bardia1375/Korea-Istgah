@@ -17,12 +17,12 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
     <RevealWrapper as="section" className="video-section overflow-hidden pb-14 md:pb-16 lg:pb-[88px] xl:pb-[112px]">
       <div className="flex w-full justify-center">
         <RevealWrapper className="rv-badge mb-8">
-          <span ref={revealRef} className="rv-badge-text">
+          <span  className="rv-badge-text">
             Musical Performance (Korea && Istgah){' '}
           </span>
         </RevealWrapper>
       </div>
-      <RevealWrapper className="mb-8">
+      <RevealWrapper ref={revealRef} className="mb-8">
         <div className="mx-auto max-w-3xl space-y-8 rounded-2xl bg-white/70 p-8 shadow-lg backdrop-blur-md dark:bg-gray-900/70">
           Istgah Orchestra will present a special performance featuring famous Korean and Iranian songs — a blend of
           nostalgic classics and contemporary hits, performed in orchestral arrangement for the first time. The
