@@ -1,13 +1,16 @@
 'use client'
 import useReveal from '@/hooks/useReveal'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
+import Link from 'next/link'
 
 const AboutV9 = () => {
   const { revealRef } = useReveal()
   const gsapRef = useRef<HTMLHeadingElement>(null)
+
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     if (gsapRef.current) {
@@ -30,12 +33,6 @@ const AboutV9 = () => {
     <section className="relative overflow-hidden bg-gradient-to-b pb-20 pt-12">
       <div className="container">
         <div>
-          {/* <div className=" w-full flex justify-center">
-           <RevealWrapper className=" rv-badge mb-8">
-            <span className="rv-badge-text">     Highlights of the Celebration</span>
-          </RevealWrapper>
-          </div> */}
-
           <TextAppearAnimation>
             <h2
               ref={gsapRef}
@@ -50,7 +47,7 @@ const AboutV9 = () => {
         <div
           ref={revealRef}
           className="mx-auto max-w-3xl space-y-8 rounded-2xl bg-white/70 p-8 shadow-lg backdrop-blur-md dark:bg-gray-900/70">
-          {/* بخش ۱ */}
+          {/* بخش‌ها */}
           <div className="border-l-4 border-red-500 pl-4">
             <h3 className="text-lg font-semibold text-red-700">1. Guest Arrival and Welcome Ceremony</h3>
             <ul className="mt-2 list-disc pl-6 text-gray-700 dark:text-gray-300">
@@ -59,24 +56,31 @@ const AboutV9 = () => {
             </ul>
           </div>
 
-          {/* بخش ۲ */}
           <div className="border-l-4 border-blue-500 pl-4">
             <h3 className="text-lg font-semibold text-blue-700">2. Korean Cultural Experience</h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">Traditional Korean Cuisine</p>
           </div>
 
-          {/* بخش ۳ */}
           <div className="border-l-4 border-red-500 pl-4">
             <h3 className="text-lg font-semibold text-red-700">3. Musical Performance</h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">Istgah Orchestra</p>
           </div>
 
-          {/* بخش ۴ */}
           <div className="border-l-4 border-blue-500 pl-4">
             <h3 className="text-lg font-semibold text-blue-700">4. Taekwondo Demonstration</h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">Takavaran Taekwondo Performance Group</p>
           </div>
         </div>
+
+        {/* دکمه */}
+        <RevealWrapper className="mt-4 flex flex-col justify-center overflow-hidden sm:flex-row">
+          <Link
+            href={'/eventProgram'}
+            onClick={() => setIsOpen(true)}
+            className="tab-button active border-y border-l text-center text-base font-medium uppercase leading-[1.1] tracking-[1.12px] dark:border-transparent dark:bg-backgroundBody/90 dark:text-secondary max-md:px-10 max-md:py-5 md:px-16 md:py-8">
+            EVENT PROGRAM
+          </Link>
+        </RevealWrapper>
       </div>
     </section>
   )
