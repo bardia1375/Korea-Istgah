@@ -38,7 +38,7 @@ const HeroV7 = () => {
         </p>
       </RevealWrapper>
 
-      <SkewMarquee />
+      {/* <SkewMarquee /> */}
 
       <HeroAbout />
     </section>

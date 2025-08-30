@@ -18,7 +18,7 @@ const HeroAbout = ({ spacingTop }: PropsTypes) => {
     </RevealWrapper>
   ) : (
     <div className="flex w-full justify-center">
-      <RevealWrapper className="rv-badge mb-4">
+      <RevealWrapper className="rv-badge mt-8">
         <span className="rv-badge-text"> Highlights of the Celebration</span>
       </RevealWrapper>
     </div>

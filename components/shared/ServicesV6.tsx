@@ -5,33 +5,24 @@ import Link from 'next/link'
 import { useState } from 'react'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
+import ProcessV3 from '@/components/homepage-05/ProcessV3'
 
 const servicesData = [
   {
     id: 1,
-    title: 'Korea History',
+    title: 'Istgah History',
     subtitle: 'Exploring the rich cultural heritage of Korea',
     items: [
-      'Ancient Dynasties & Kingdoms',
-      'Traditional Customs & Rituals',
-      'Historical Landmarks & Sites',
-      'Cultural Development Periods',
-      'Korean War & Modern Era',
-      'Cultural Preservation Efforts',
+      `ISTGAH was born in 2010 with a big dream: to create an independent and private orchestra in Iran. 
+But this dream quickly went beyond local borders, and ISTGAH became one of the main players in music, musical theater and international collaborations. 
+One of the turning points of this path was the concert of Richard Clayderman, the famous French pianist, for six nights in Tehran. In addition to playing a role in the musical projects of Mary Poppins and The Bride of the Dead, Istgah, has collaborated with distinguished figures such as Maestro Naser Cheshmazar, one of the greats of contemporary Iranian music, and with the cultural departments of various embassies from all five continents such as (Japan, Philippines, Turkey, Italy, Switzerland, Austria, etc.). Istgah showed that music can make ever-lasting moments for cultures.`,
     ],
   },
   {
     id: 2,
-    title: 'Istgah History',
+    title: 'Songs List',
     subtitle: 'Journey through the evolution of our platform',
-    items: [
-      'Foundation & Early Days',
-      'Platform Milestones',
-      'Community Growth Stories',
-      'Technical Innovations',
-      'Partnership Developments',
-      'Future Vision & Goals',
-    ],
+    items: [],
   },
   // {
   //   id: 3,
@@ -47,29 +38,41 @@ const servicesData = [
   //   ],
   // },
   {
-    id: 4,
-    title: 'Songs List',
-    subtitle: 'Curated collection of memorable Korean music',
+    id: 5,
+    title: 'Executive Team List',
+    subtitle: 'Discovering Korean festivals and celebrations',
     items: [
-      'Chart-Topping Hits',
-      'Classic K-pop Songs',
-      'Traditional Folk Music',
-      'Original Soundtracks (OST)',
-      'Seasonal Favorites',
-      'Fan-Favorite Ballads',
+      'Mahdi Norouzi - Founder & CEO',
+      'Ayeh Bahmani - COO',
+      'Farzad Taghizadeh - Digital Strategy Manager',
+      'NazAfarin Moghadam - CDO',
+      'Yasamin Hariri - Executive Coordinator',
     ],
   },
   {
-    id: 5,
-    title: 'About Celebration',
-    subtitle: 'Discovering Korean festivals and celebrations',
+    id: 4,
+    title: 'Musician List',
+    subtitle: 'Curated collection of memorable Korean music',
     items: [
-      'Traditional Holidays',
-      'Modern Festivals',
-      'Cultural Ceremonies',
-      'Seasonal Celebrations',
-      'Music Award Shows',
-      'Fan Meeting Events',
+      'Reza Fanid - Conductor',
+      'Daniel Jourabchi - Violinist',
+      'Armin Ghozzatian - Violinist',
+      'Nafiseh Mahmoudi - Violinist',
+      'Nika Karahan - Violinist',
+      'Adeleh Lotfi - Violinist',
+      'Sara Naderi - Violinist',
+      'SeyedBardis Shams - Violinist',
+      'Dariush Hejazi - Violist',
+      'Arian Zamani - Violist',
+      'Sina Azar Abad - Cellist',
+      'Shahrzad Majd - Cellist',
+      'Soroush Omoumi - Drummer',
+      'Mehrdad Hamedi - Bass Guitarist',
+      'Diba Vali - Harpist',
+      'Zahra Bagheri - Flutist',
+      'Iman Jafari Pouyan - Clarinetist & Saxophonist',
+      'Ghazaleh Mirzadeh - Piccolo player',
+      'Hamed Lak - Orchestra Coordinator',
     ],
   },
 ]
@@ -132,9 +135,12 @@ const ServicesV6 = () => {
                   activeIndex === index ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
                 }`}>
                 <div className="overflow-hidden">
-                  <div className="accordion-body flex flex-col justify-start px-10 pb-10 duration-300 sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px]">
+                  <div
+                    className={`accordion-body relative flex flex-col justify-start px-10 pb-10 duration-300 sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
+                      index === 1 ? 'scroll-area max-h-[1000px] overflow-y-auto' : ''
+                    }`}>
                     <ul className="[&>*:not(:last-child)]:mb-1">
-                      {service.items.slice(0, Math.ceil(service.items.length / 2)).map((item, idx) => (
+                      {service.items.map((item, idx) => (
                         <li
                           key={idx}
                           className="list-disc text-[17px] leading-[1.5] tracking-[0.36px] text-secondary/70 dark:text-backgroundBody/70">
@@ -142,15 +148,13 @@ const ServicesV6 = () => {
                         </li>
                       ))}
                     </ul>
-                    <ul className="[&>*:not(:last-child)]:mb-1">
-                      {service.items.slice(Math.ceil(service.items.length / 2)).map((item, idx) => (
-                        <li
-                          key={idx}
-                          className="list-disc text-[17px] leading-[1.5] tracking-[0.36px] text-secondary/70 dark:text-backgroundBody/70">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
+
+                    {index == 1 ? <ProcessV3 /> : null}
+
+                    {/* gradient overlay برای نشون دادن ادامه داشتن محتوا */}
+                    {index === 1 && (
+                      <div className="pointer-events-none absolute bottom-0 left-0 h-10 w-full bg-gradient-to-t from-backgroundBody dark:from-dark"></div>
+                    )}
                   </div>
                 </div>
               </div>

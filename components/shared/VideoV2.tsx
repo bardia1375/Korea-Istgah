@@ -4,6 +4,7 @@ import { FC, useState } from 'react'
 import RevealWrapper from '../animation/RevealWrapper'
 import VideoModal2 from './VideoModal2'
 import useReveal from '@/hooks/useReveal'
+import SkewMarquee from '../shared/SkewMarquee'
 
 interface VideoV2Props {
   thumbnail?: string
@@ -15,6 +16,7 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
 
   return (
     <RevealWrapper as="section" className="video-section overflow-hidden pb-14 md:pb-16 lg:pb-[88px] xl:pb-[112px]">
+      <SkewMarquee />
       <div className="flex w-full justify-center">
         <RevealWrapper className="rv-badge">
           <span className="rv-badge-text">Musical Performance (Korea && Istgah) </span>
@@ -22,10 +24,13 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
       </div>
       <RevealWrapper ref={revealRef} className="mb-8">
         <div className="mx-auto max-w-3xl space-y-8 rounded-2xl bg-white/70 p-8 text-justify shadow-lg backdrop-blur-md dark:bg-gray-900/70">
-          Istgah Orchestra will present a special performance featuring famous Korean and Iranian songs — a blend of
-          nostalgic classics and contemporary hits, performed in orchestral arrangement for the first time. The
-          repertoire includes Golden Soda Pop, Shut Down, Stay with Me, APT, Arirang, Beautiful Country, Ohnara,
-          Gheisar, Porson Porson, Jane Maryam, and Gole Goldan
+          ISTGAH: The Sound of Peace, Culture and Nostalgia from Iran to the World In a world where borders are becoming
+          increasingly blurred, music and art, as a universal language, play an unparalleled role in creating peace and
+          understanding between cultures. Mahdi Norouzi is the founder of “ISTGAH Orchestra” and CEO of the “Peace
+          Ambassador of ISTGAH” cultural and artistic complex. He was graduated from the Conservatory of Music with more
+          than a decade of activity. He has not only expanded the boundaries of music, but also, as a cultural
+          ambassador, has conveyed the message of peace, nostalgia and solidarity from Iran to the world. From Dream to
+          Reality: The Birth of a Global Orchestra
         </div>
       </RevealWrapper>
       <div className="hero-video-container group container relative">

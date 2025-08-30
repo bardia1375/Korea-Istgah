@@ -61,15 +61,13 @@ const ServicesV10 = () => {
       <div className="container">
         <div className="mb-8 text-center md:mb-14">
           <RevealWrapper className="rv-badge reveal-me">
-            <span className="rv-badge-text">Services</span>
+            <span className="rv-badge-text">Traditional Korean Cuisine</span>
           </RevealWrapper>
           <TextAppearAnimation>
             <h2 className="text-appear my-3"></h2>
           </TextAppearAnimation>
 
-          <RevealWrapper as="p">
-            Each project reflects our dedication to excellence, creativity, and innovation.
-          </RevealWrapper>
+          <RevealWrapper as="p"></RevealWrapper>
         </div>
         <div ref={triggerRef} className="service-section pt-10">
           <div
