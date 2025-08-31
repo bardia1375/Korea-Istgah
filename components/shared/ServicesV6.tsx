@@ -119,17 +119,14 @@ function AccordionItem({ isActive, onToggle, title, subtitle, children, idx }: A
   )
 
   return (
-    <div
-      className="faq-body-transition overflow-visible border border-secondary/10 bg-backgroundBody duration-300 dark:border-backgroundBody/10 dark:bg-dark"
-      aria-expanded={isActive}>
+    <div className="faq-body-transition overflow-visible border border-secondary/10 bg-backgroundBody duration-300 dark:border-backgroundBody/10 dark:bg-dark">
       <button
         type="button"
         onClick={onToggle}
-        className={`group relative flex w-full cursor-pointer items-center justify-between px-5 py-5 text-left md:px-10 ${
-          isActive ? 'active' : ''
-        }`}
+        className={`group relative flex w-full cursor-pointer items-center justify-between px-5 py-5 text-left md:px-10 ${isActive ? 'active' : ''}`}
         aria-controls={`accordion-panel-${idx}`}
-        aria-haspopup="region">
+        aria-expanded={isActive} 
+      >
         <h3 className="flex flex-col items-center gap-x-10 gap-y-3 text-[25px] font-normal leading-[25.2px] text-secondary dark:text-white md:flex-row md:text-5xl md:leading-[1.2]">
           <span className="text-inherit">{title}</span>
           <span className="pr-[2px] text-base text-secondary/70 dark:text-white/70 md:text-xl md:leading-[1.4] md:tracking-[0.4px]">
