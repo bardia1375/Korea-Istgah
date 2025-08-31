@@ -41,7 +41,7 @@ const SkewMarquee = () => {
       // 2) انیمیشن بدون پرش + wrap
       animRef.current = gsap.to(track, {
         x: `-=${halfWidth}`, // حرکت به اندازه‌ی نصف کل طول (چون دو کپی داریم)
-        duration: (halfWidth / 100) * 2, // سرعت: هر 100px ≈ 2s (قابل تغییر)
+        duration: (halfWidth / 200) * 2, // سرعت: هر 100px ≈ 2s (قابل تغییر)
         ease: 'none',
         repeat: -1,
         force3D: true,
