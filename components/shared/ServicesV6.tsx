@@ -97,7 +97,7 @@ function AccordionItem({ isActive, onToggle, title, subtitle, children, idx }: A
     }
   }, [])
 
-  const animatedMaxHeight = isActive ? (idx === 1 ? Math.min(contentHeight, 450) : contentHeight) : 0
+  const animatedMaxHeight = isActive ? (idx === 1 ? Math.min(contentHeight, 350) : contentHeight) : 0
   const isProcessPanel = idx === 1
 
   // ⬇️ هندلر سبک برای سینک کردن اسکرول داخلی با لیسنرهای window.scroll (برای ریویل/انیمیشن‌ها)
@@ -152,8 +152,8 @@ function AccordionItem({ isActive, onToggle, title, subtitle, children, idx }: A
         role="region">
         <div ref={bodyRef}>
           <div
-            className={`accordion-body relative flex flex-col justify-start px-10 pb-10 text-justify sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
-              isProcessPanel ? 'max-h-[450px] overflow-y-auto pr-2' : ''
+            className={`accordion-body relative flex flex-col justify-start pb-10 text-justify sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
+              isProcessPanel ? 'max-h-[350px] overflow-y-auto pr-2' : ''
             }`}
             onScroll={isProcessPanel ? handleInnerScroll : undefined}>
             {children}
