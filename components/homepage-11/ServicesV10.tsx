@@ -76,16 +76,11 @@ const ServicesV10 = () => {
             {data.map((item) => (
               <div key={item.id} className="group w-[370px] cursor-fancy">
                 <figure className="hero-video-container overflow-hidden">
-                  <Link
-                    target="_blank"
-                    href="https://www.youtube.com/watch?v=HszQAizu-So"
-                    className="hero-video block cursor-fancy">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-[320px]"
-                    />
-                  </Link>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-[320px]"
+                  />
                 </figure>
                 {/* <h3 className="mb-2.5 mt-[30px] text-2xl leading-[1.1] tracking-normal md:text-[32px]">{item.title}</h3> */}
                 {/* <p className="max-w-[95%] text-base leading-[1.6] tracking-[0.32px]">{item.description}</p> */}
