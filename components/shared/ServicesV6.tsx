@@ -152,7 +152,7 @@ function AccordionItem({ isActive, onToggle, title, subtitle, children, idx }: A
         role="region">
         <div ref={bodyRef}>
           <div
-            className={`accordion-body relative flex flex-col justify-start pb-10 text-justify sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
+            className={`accordion-body relative flex flex-col justify-start ${idx == 1 ? 'px-0' : 'px-10'} pb-10 text-justify sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
               isProcessPanel ? 'max-h-[350px] overflow-y-auto pr-2' : ''
             }`}
             onScroll={isProcessPanel ? handleInnerScroll : undefined}>
