@@ -7,6 +7,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 import ProcessV3 from '@/components/homepage-05/ProcessV3'
+import SkewMarquee from './SkewMarquee'
 
 // ------------------ DATA ------------------
 const servicesData = [
@@ -171,52 +172,56 @@ const ServicesV6 = () => {
   const blocks = useMemo(() => servicesData, [])
 
   return (
-    <section className="relative overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
-      <div className="absolute left-1/2 top-[47%] -z-40 -translate-x-1/2 -translate-y-[45%] scale-x-[2.7] scale-y-[3.8] sm:scale-y-[3.3] md:scale-y-[3.2] lg:scale-y-[2.4] xl:scale-x-[2.4] xl:scale-y-[1.2]">
-        <Image src={gradientBg} alt="gradient-bg" />
-      </div>
-
-      <div className="container">
-        <div className="mb-8 text-center md:mb-20">
-          <RevealWrapper className="rv-badge reveal-me mb-5 md:mb-8">
-            <span className="rv-badge-text">Services</span>
-          </RevealWrapper>
-          <TextAppearAnimation>
-            <h2 className="text-appear mx-auto max-w-[770px]">There is a lot we can do. Here is a few.</h2>
-          </TextAppearAnimation>
+    <>
+      {' '}
+      <section className="relative overflow-hidden pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
+        <SkewMarquee />
+        <div className="absolute left-1/2 top-[47%] -z-40 -translate-x-1/2 -translate-y-[45%] scale-x-[2.7] scale-y-[3.8] sm:scale-y-[3.3] md:scale-y-[3.2] lg:scale-y-[2.4] xl:scale-x-[2.4] xl:scale-y-[1.2]">
+          <Image src={gradientBg} alt="gradient-bg" />
         </div>
 
-        <RevealWrapper className="mx-auto w-full max-w-[1170px] [&>*:not(:last-child)]:mb-6">
-          {blocks.map((service, index) => (
-            <AccordionItem
-              key={service.id}
-              idx={index}
-              isActive={activeIndex === index}
-              onToggle={() => toggleAccordion(index)}
-              title={service.title}
-              subtitle={service.subtitle}>
-              {/* متن/لیست سمت چپ */}
-              <ul className="[&>*:not(:last-child)]:mb-1">
-                {service.items.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="list-disc text-[17px] leading-[1.5] tracking-[0.36px] text-secondary/70 dark:text-backgroundBody/70">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+        <div className="container">
+          <div className="mb-8 text-center md:mb-20">
+            <RevealWrapper className="rv-badge reveal-me mb-5 md:mb-8">
+              <span className="rv-badge-text">Songs & Team</span>
+            </RevealWrapper>
+            {/* <TextAppearAnimation>
+            <h2 className="text-appear mx-auto max-w-[770px]">Songs & Team</h2>
+          </TextAppearAnimation> */}
+          </div>
 
-              {/* محتوای ویژه: ProcessV4 برای بلوک دوم */}
-              {index === 1 ? (
-                <div className="mt-6 w-full">
-                  <ProcessV3 />
-                </div>
-              ) : null}
-            </AccordionItem>
-          ))}
-        </RevealWrapper>
-      </div>
-    </section>
+          <RevealWrapper className="mx-auto w-full max-w-[1170px] [&>*:not(:last-child)]:mb-6">
+            {blocks.map((service, index) => (
+              <AccordionItem
+                key={service.id}
+                idx={index}
+                isActive={activeIndex === index}
+                onToggle={() => toggleAccordion(index)}
+                title={service.title}
+                subtitle={service.subtitle}>
+                {/* متن/لیست سمت چپ */}
+                <ul className="[&>*:not(:last-child)]:mb-1">
+                  {service.items.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="list-disc text-[17px] leading-[1.5] tracking-[0.36px] text-secondary/70 dark:text-backgroundBody/70">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* محتوای ویژه: ProcessV4 برای بلوک دوم */}
+                {index === 1 ? (
+                  <div className="mt-6 w-full">
+                    <ProcessV3 />
+                  </div>
+                ) : null}
+              </AccordionItem>
+            ))}
+          </RevealWrapper>
+        </div>
+      </section>
+    </>
   )
 }
 

@@ -16,7 +16,6 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
 
   return (
     <RevealWrapper as="section" className="video-section overflow-hidden pb-14 md:pb-16 lg:pb-[88px] xl:pb-[112px]">
-      <SkewMarquee />
       <div className="flex w-full justify-center">
         <RevealWrapper className="rv-badge">
           <span className="rv-badge-text">Musical Performance (Korea && Istgah) </span>

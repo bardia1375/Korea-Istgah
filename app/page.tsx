@@ -32,6 +32,7 @@ import VideoV3 from '@/components/shared/VideoV3'
 
 import TestimonialV6 from '@/components/homepage-04/TestimonialV6'
 import TestimonialV7 from '@/components/homepage-04/TestimonialV7'
+import SkewMarquee from '@/components/shared/SkewMarquee'
 
 export const metadata = {
   title: 'Korea Celebration',
@@ -69,13 +70,14 @@ const Home = () => {
       <Video />
       <AboutV9 />
       <ServicesV10 />
+      {/* <SkewMarquee /> */}
+      <ServicesV6 />
       <VideoV2 />
       {/* <BlogPostV7 posts={blogPosts} /> */}
       {/* <ProcessV4 /> */}
       <OurWork />
       <VideoV3 />
       {/* <ServicesCard servicesData={servicesData} /> */}
-      <ServicesV6 />
       <TestimonialV5 />
       <TestimonialV6 />
       <TestimonialV7 />

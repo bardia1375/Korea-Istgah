@@ -306,7 +306,7 @@ export default function Navbar() {
                 priority
               /> */}
             <Image
-              className="mt-4 hidden max-h-[68px] w-[50px] dark:inline-block"
+              className="mt-4 hidden max-h-[68px] w-[54px] dark:inline-block"
               src={iranLogo}
               alt="logo"
               width={120}
