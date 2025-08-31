@@ -3,7 +3,7 @@
 import gradientBg from '@/public/images/services-gradient-bg-2.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
 import ProcessV3 from '@/components/homepage-05/ProcessV3'

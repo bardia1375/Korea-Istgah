@@ -290,7 +290,7 @@ export default function Navbar() {
           className={`fixed z-[1000] w-full px-5 pt-1 transition duration-300 ease-linear will-change-transform sm:px-8 sm:pt-5 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
           <div className="flex justify-between">
             <Image
-              className="w-[60px] mt-4 hidden max-h-[68px] dark:inline-block"
+              className="mt-4 hidden max-h-[68px] w-[60px] dark:inline-block"
               src={logoDark}
               alt="logo"
               width={136}
@@ -306,7 +306,7 @@ export default function Navbar() {
                 priority
               /> */}
             <Image
-              className="w-[60px] mt-4 hidden max-h-[68px]  dark:inline-block"
+              className="mt-4 hidden max-h-[68px] w-[60px] dark:inline-block"
               src={iranLogo}
               alt="logo"
               width={120}
