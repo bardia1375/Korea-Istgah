@@ -11,16 +11,16 @@ import SkewMarquee from './SkewMarquee'
 
 // ------------------ DATA ------------------
 const servicesData = [
-  {
-    id: 1,
-    title: 'Istgah History',
-    subtitle: 'Exploring the rich cultural heritage of Korea',
-    items: [
-      `ISTGAH was born in 2010 with a big dream: to create an independent and private orchestra in Iran. 
-But this dream quickly went beyond local borders, and ISTGAH became one of the main players in music, musical theater and international collaborations. 
-One of the turning points of this path was the concert of Richard Clayderman, the famous French pianist, for six nights in Tehran. In addition to playing a role in the musical projects of Mary Poppins and The Bride of the Dead, Istgah, has collaborated with distinguished figures such as Maestro Naser Cheshmazar, one of the greats of contemporary Iranian music, and with the cultural departments of various embassies from all five continents such as (Japan, Philippines, Turkey, Italy, Switzerland, Austria, etc.). Istgah showed that music can make ever-lasting moments for cultures.`,
-    ],
-  },
+  //   {
+  //     id: 1,
+  //     title: 'Istgah History',
+  //     subtitle: 'Exploring the rich cultural heritage of Korea',
+  //     items: [
+  //       `ISTGAH was born in 2010 with a big dream: to create an independent and private orchestra in Iran.
+  // But this dream quickly went beyond local borders, and ISTGAH became one of the main players in music, musical theater and international collaborations.
+  // One of the turning points of this path was the concert of Richard Clayderman, the famous French pianist, for six nights in Tehran. In addition to playing a role in the musical projects of Mary Poppins and The Bride of the Dead, Istgah, has collaborated with distinguished figures such as Maestro Naser Cheshmazar, one of the greats of contemporary Iranian music, and with the cultural departments of various embassies from all five continents such as (Japan, Philippines, Turkey, Italy, Switzerland, Austria, etc.). Istgah showed that music can make ever-lasting moments for cultures.`,
+  //     ],
+  //   },
   {
     id: 2,
     title: 'Songs List',
@@ -98,8 +98,8 @@ function AccordionItem({ isActive, onToggle, title, subtitle, children, idx }: A
     }
   }, [])
 
-  const animatedMaxHeight = isActive ? (idx === 1 ? Math.min(contentHeight, 350) : contentHeight) : 0
-  const isProcessPanel = idx === 1
+  const animatedMaxHeight = isActive ? (idx === 0 ? Math.min(contentHeight, 350) : contentHeight) : 0
+  const isProcessPanel = idx === 0
 
   // ⬇️ هندلر سبک برای سینک کردن اسکرول داخلی با لیسنرهای window.scroll (برای ریویل/انیمیشن‌ها)
   const rafRef = useRef<number | null>(null)
@@ -153,7 +153,7 @@ function AccordionItem({ isActive, onToggle, title, subtitle, children, idx }: A
         role="region">
         <div ref={bodyRef}>
           <div
-            className={`accordion-body relative flex flex-col justify-start ${idx == 1 ? 'px-0' : 'px-10'} pb-10 text-justify sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
+            className={`accordion-body relative flex flex-col justify-start ${idx == 0 ? 'px-0' : 'px-10'} pb-10 text-justify sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
               isProcessPanel ? 'max-h-[350px] overflow-y-auto pr-2' : ''
             }`}
             onScroll={isProcessPanel ? handleInnerScroll : undefined}>
@@ -211,7 +211,7 @@ const ServicesV6 = () => {
                 </ul>
 
                 {/* محتوای ویژه: ProcessV4 برای بلوک دوم */}
-                {index === 1 ? (
+                {index === 0 ? (
                   <div className="mt-6 w-full">
                     <ProcessV3 />
                   </div>
