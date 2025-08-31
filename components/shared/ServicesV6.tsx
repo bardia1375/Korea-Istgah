@@ -136,8 +136,8 @@ const ServicesV6 = () => {
                 }`}>
                 <div className="overflow-hidden">
                   <div
-                    className={`accordion-body relative flex flex-col justify-start px-10 pb-10 duration-300 sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
-                      index === 1 ? 'scroll-area max-h-[1000px] overflow-y-auto' : ''
+                    className={`text-justify accordion-body relative flex flex-col justify-start px-10 pb-10 duration-300 sm:ml-2.5 sm:flex-row sm:gap-10 md:ml-6 lg:gap-x-[73px] ${
+                      index === 1 ? 'scroll-area max-h-[500px] overflow-y-auto' : ''
                     }`}>
                     <ul className="[&>*:not(:last-child)]:mb-1">
                       {service.items.map((item, idx) => (
