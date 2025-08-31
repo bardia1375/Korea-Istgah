@@ -48,19 +48,12 @@ const ProcessV3 = () => {
                 />
 
                 {/* شماره آیتم */}
-{/* شماره آیتم */}
-<div
-  className="
-    mb-4 inline-flex h-10 w-10 items-center justify-center
-    rounded-full 
-    bg-gradient-to-tr from-[#0047A0] to-[#CD2E3A]    /* قرمز → آبی */
-    text-white text-sm font-semibold
-    shadow-md ring-2 
-  "
-  aria-label={`#${idx + 1}`}
->
-  {idx + 1}
-</div>
+                {/* شماره آیتم */}
+                <div
+                  className="/* قرمز → آبی */ mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-tr from-[#0047A0] to-[#CD2E3A] text-sm font-semibold text-white shadow-md ring-2"
+                  aria-label={`#${idx + 1}`}>
+                  {idx + 1}
+                </div>
 
                 {/* عنوان */}
                 <h5 className="text-lg font-semibold tracking-tight text-secondary dark:text-white md:text-xl">
