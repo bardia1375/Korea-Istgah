@@ -5,6 +5,7 @@ import RevealWrapper from '../animation/RevealWrapper'
 import VideoModal2 from './VideoModal2'
 import useReveal from '@/hooks/useReveal'
 import SkewMarquee from '../shared/SkewMarquee'
+import topArrowDark from '@/public/images/icons/top-arrow-dark.svg'
 
 interface VideoV2Props {
   thumbnail?: string
@@ -19,6 +20,13 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
 
   return (
     <RevealWrapper as="section" className="video-section overflow-hidden pb-14 md:pb-16 lg:pb-[88px] xl:pb-[112px]">
+      <div className="container">
+        <div className="mb-8 text-center md:mb-20">
+          <RevealWrapper className="rv-badge reveal-me mb-5 md:mb-8">
+            <span className="rv-badge-text">Korea & Istgah</span>
+          </RevealWrapper>
+        </div>
+      </div>
       <div className="flex w-full justify-center">
         <RevealWrapper className="rv-badge">
           <span className="rv-badge-text">Musical Performance (Korea & Istgah) </span>
