@@ -37,7 +37,7 @@ const servicesData = [
       'Farzad Taghizadeh - Digital Strategy',
       'NazAfarin Moghadam - CDO',
       'Yasamin Hariri - Executive Coordinator',
-      `Reza Kalhor - Sound Manager`
+      `Reza Kalhor - Sound Manager`,
     ],
   },
   {

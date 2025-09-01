@@ -2,7 +2,6 @@
 import userImg1 from '@/public/images/370in370/Language.jpg'
 import userImg2 from '@/public/images/370in370/Bukchon Hanok Village.webp'
 
-
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import { Autoplay, Navigation } from 'swiper/modules'
@@ -26,7 +25,6 @@ const userFeedback = [
   //   position: 'Hangul',
   //   img: userImg2,
   // },
-
 ]
 const TestimonialV8 = () => {
   return (

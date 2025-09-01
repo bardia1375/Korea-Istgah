@@ -30,7 +30,7 @@ const HeroV7 = () => {
           </h2>
         </div>
 
-        <p className="mt-10 max-w-[770px] font-normal max-lg:mx-auto text-justify">
+        <p className="mt-10 max-w-[770px] text-justify font-normal max-lg:mx-auto">
           The Embassy of the Republic of Korea in the Islamic Republic of Iran is honored to host a reception
           celebrating the National Day of the Republic of Korea. This occasion not only commemorates the founding of the
           Republic, but also honors Korea’s rich history, culture, and traditions while strengthening the bonds of

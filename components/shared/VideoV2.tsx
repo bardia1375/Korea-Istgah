@@ -33,10 +33,9 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
               id={contentId}
               className={[
                 'relative transition-[max-height] duration-300 ease-in-out',
-                expanded ? 'max-h-[2000px]' : 'max-h-96 md:max-h-48 overflow-hidden'
+                expanded ? 'max-h-[2000px]' : 'max-h-96 overflow-hidden md:max-h-48',
               ].join(' ')}
-              aria-expanded={expanded}
-            >
+              aria-expanded={expanded}>
               <p>
                 ISTGAH: The Sound of Peace, Culture and Nostalgia from Iran to the World In a world where borders are
                 becoming increasingly blurred, music and art, as a universal language, play an unparalleled role in
@@ -57,10 +56,7 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
 
               {/* Fade overlay when collapsed */}
               {!expanded && (
-                <div
-                  className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t
-                             from-white/90 to-transparent dark:from-gray-900/90"
-                />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/90 to-transparent dark:from-gray-900/90" />
               )}
             </div>
 
@@ -70,9 +66,7 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
                 aria-controls={contentId}
                 aria-expanded={expanded}
                 onClick={() => setExpanded((v) => !v)}
-                className="rounded-full border px-4 py-2 text-sm font-medium backdrop-blur
-                           transition hover:shadow-md dark:border-white/20"
-              >
+                className="rounded-full border px-4 py-2 text-sm font-medium backdrop-blur transition hover:shadow-md dark:border-white/20">
                 {expanded ? 'Read less' : 'Read more'}
               </button>
             </div>
@@ -85,8 +79,7 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
           <img src={thumbnail ?? '/images/mahdinorouzi.webp'} alt="hero video-bg" />
           <button
             className="absolute inset-0 flex cursor-pointer items-center justify-center transition-all duration-300 group-hover:transform group-hover:[&>div]:scale-110"
-            onClick={() => setOpen(true)}
-          >
+            onClick={() => setOpen(true)}>
             <div className="play-button relative h-14 w-20 rounded-full bg-backgroundBody/40 p-4 bg-blend-lighten transition-transform duration-300 lg:h-[90px] lg:w-[140px] lg:rounded-[241px]">
               <span className="absolute inset-0 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width={21} height={24} viewBox="0 0 21 24" fill="none">

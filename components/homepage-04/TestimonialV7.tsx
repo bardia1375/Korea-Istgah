@@ -44,7 +44,7 @@ const userFeedback = [
     position: 'Jeju Island',
     img: userImg4,
   },
-    {
+  {
     id: 5,
     feedback:
       'Dokdo Island, a cluster of volcanic islets in Korea’s East Sea formed over four million years ago, has been an integral part of Korea’s historical territory since ancient times. Beyond its geopolitical significance, Dokdo stands as a symbol of national sovereignty and a treasured natural heritage of Korea.',

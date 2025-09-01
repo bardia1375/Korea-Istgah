@@ -23,16 +23,17 @@ const data = [
   {
     id: 3,
     title: 'YUKJEON - 육전',
-    description: "Yukjeon is a traditional Korean dish of thin beef slices coated in flour and egg, then pan-fried. It has a soft texture with a savory, rich flavor Commonly served during holidays like Chuseok and Lunar New Year, it's a festive favorite.",
+    description:
+      "Yukjeon is a traditional Korean dish of thin beef slices coated in flour and egg, then pan-fried. It has a soft texture with a savory, rich flavor Commonly served during holidays like Chuseok and Lunar New Year, it's a festive favorite.",
     image: '/images/370in561-/YUKJEON.webp',
   },
   {
     id: 4,
     title: 'ТТЕОКВОККІ - 떡복이',
-    description: "Tteokbokki is a popular Korean dish made with chewy rice cakes in a spicy-sweet gochujang sauce. The rice cakes absorb the bold, savory flavors, making it a comforting and satisfying meal. Often served as street food, it's loved for its balance of heat, sweetness, and texture.",
+    description:
+      "Tteokbokki is a popular Korean dish made with chewy rice cakes in a spicy-sweet gochujang sauce. The rice cakes absorb the bold, savory flavors, making it a comforting and satisfying meal. Often served as street food, it's loved for its balance of heat, sweetness, and texture.",
     image: '/images/370in561-/ТТЕОКВОККІ.webp',
   },
-  
 ]
 
 const ServicesV10 = () => {
