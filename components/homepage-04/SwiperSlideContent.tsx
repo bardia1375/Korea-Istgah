@@ -31,21 +31,7 @@ const SwiperSlideContent: FC<SwiperSlideContentProps> = ({ feedback, name, posit
         <div className="mt-12 flex items-center justify-between">
           <div className="flex space-x-3">
             <Link
-              target="_blank"
-              href="https://www.linkedin.com/company/staticmania"
-              className="border p-1.5 duration-300 hover:bg-primary dark:border-dark md:p-3">
-              <img src="/images/home-4/linkedin.png" alt="icon" className="mt-[2px] block dark:hidden" />
-              <img src="/images/home-4/linkedin-dark.png" alt="icon" className="mt-[2px] hidden dark:block" />
-            </Link>
-            <Link
-              href="https://x.com/heystaticmania"
-              target="_blank"
-              className="border p-1.5 duration-300 hover:bg-primary dark:border-dark md:p-3">
-              <img src="/images/home-4/old-twitter.png" alt="icon" className="block dark:hidden" />
-              <img src="/images/home-4/old-twitter-dark.png" alt="icon" className="hidden dark:block" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/staticmania_/"
+              href="https://www.instagram.com/koreanculture_iran/"
               target="_blank"
               className="border p-1.5 duration-300 hover:bg-primary dark:border-dark md:p-3">
               <img src="/images/home-4/instragram.png" alt="icon" className="block dark:hidden" />

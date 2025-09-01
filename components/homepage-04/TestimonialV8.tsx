@@ -1,9 +1,7 @@
 'use client'
-import userImg1 from '@/public/images/370in370/The royal palaces of Seoul.webp'
+import userImg1 from '@/public/images/370in370/Language.jpg'
 import userImg2 from '@/public/images/370in370/Bukchon Hanok Village.webp'
-import userImg3 from '@/public/images/370in370/Busan.webp'
-import userImg4 from '@/public/images/370in370/Jeju Island.webp'
-import userImg5 from '@/public/images/370in370/Island.webp'
+
 
 import 'swiper/css'
 import 'swiper/css/autoplay'
@@ -15,49 +13,26 @@ const userFeedback = [
   {
     id: 1,
     feedback:
-      'The royal palaces of Seoul, notably Gyeongbokgung built in 1395, stand as symbols of the Joseon dynasty’s authority and masterpieces of traditional Korean architecture, preserving Korea’s living history.',
-    name: 'Nature',
-    position: 'The royal palaces of Seoul',
+      'This image depicts an early form of Hangul, the Korean alphabet created in the 15th century under King Sejong the Great. With over five centuries of history, Hangul remains Korea’s official writing system and is recognized by UNESCO as an Intangible Cultural Heritage for its scientific design and cultural significance.',
+    name: 'Language',
+    position: 'Hangul',
     img: userImg1,
   },
-  {
-    id: 2,
-    feedback:
-      'Bukchon Hanok Village, with its traditional hanok houses dating back to the Joseon era, offers a living portrait of authentic Korean life while preserving centuries of native architecture and culture.',
-    name: 'Nature',
-    position: 'Bukchon Hanok Village',
-    img: userImg2,
-  },
-  {
-    id: 3,
-    feedback:
-      'Busan, Korea’s second-largest city, has long served as the nation’s maritime gateway, with renowned beaches such as Haeundae and Gwangalli offering a dynamic blend of nature and urban vibrancy.',
-    name: 'Nature',
-    position: 'Busan',
-    img: userImg3,
-  },
-  {
-    id: 4,
-    feedback:
-      'Jeju Island, a UNESCO-designated natural heritage site formed millions of years ago, is celebrated for its volcanic landscapes and natural wonders, standing as one of Korea’s most iconic and treasured destinations.',
-    name: 'Nature',
-    position: 'Jeju Island',
-    img: userImg4,
-  },
-    {
-    id: 5,
-    feedback:
-      'Dokdo Island, a cluster of volcanic islets in Korea’s East Sea formed over four million years ago, has been an integral part of Korea’s historical territory since ancient times. Beyond its geopolitical significance, Dokdo stands as a symbol of national sovereignty and a treasured natural heritage of Korea.',
-    name: 'Nature',
-    position: 'Dokdo Island',
-    img: userImg5,
-  },
+  // {
+  //   id: 2,
+  //   feedback:
+  //     'This image depicts an early form of Hangul, the Korean alphabet created in the 15th century under King Sejong the Great. With over five centuries of history, Hangul remains Korea’s official writing system and is recognized by UNESCO as an Intangible Cultural Heritage for its scientific design and cultural significance.',
+  //   name: 'Language',
+  //   position: 'Hangul',
+  //   img: userImg2,
+  // },
+
 ]
-const TestimonialV5 = () => {
+const TestimonialV8 = () => {
   return (
     <section className="pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="container relative">
-        <h2 className="text-appear mb-9 text-center font-semibold md:mb-14">Travel Highlights</h2>
+        <h2 className="text-appear mb-9 text-center font-semibold md:mb-14">Language Highlights</h2>
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={40}
@@ -104,4 +79,4 @@ const TestimonialV5 = () => {
   )
 }
 
-export default TestimonialV5
+export default TestimonialV8

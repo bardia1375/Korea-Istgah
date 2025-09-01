@@ -8,49 +8,31 @@ import TextAppearAnimation from '../animation/TextAppearAnimation'
 const data = [
   {
     id: 1,
-    title: 'Seoul Tower',
+    title: 'Japchae - 잡채',
     description:
-      'The image features the N Seoul Tower (also known as Namsan Seoul Tower or Namsan Tower), a prominent landmark in Seoul, South Korea. The tower is surrounded by blooming cherry blossoms, indicating that the photo was likely taken during springtime, a popular time for viewing these flowers in Seoul.',
-    image: '/images/370in561-/7.webp',
+      "Japchae is Korea's classic stir-fried glass-noodle dish with vibrant vegetables, seasoned with soy sauce, sesame oil, and a touch of sugar. Often garnished with beef or egg, it's enjoyed at celebrations and in everyday meals.",
+    image: '/images/370in561-/Japchae.webp',
   },
-
   {
     id: 2,
-    title: 'Corporate & brand films',
+    title: 'Kimchi - 김치',
     description:
-      'It implies a combination of capabilities and specialized skills, which could be technical or procedural.',
-    image: '/images/370in561-/8.webp',
+      "Kimchi is Korea's most famous traditional dish, made by fermenting vegetables usually cabbage with chili pepper, garlic, and other spices. It is spicy, sour, and full of healthy probiotics. Kimchi is eaten with almost every Korean meal and is a symbol of Korean culture and tradition.",
+    image: '/images/370in561-/Kimchi.webp',
   },
   {
     id: 3,
-    title: 'Live streaming',
-    description: 'It emphasizes professionalism and the depth of experience across various services or specialties.',
-    image: '/images/370in561-/9.webp',
+    title: 'YUKJEON - 육전',
+    description: "Yukjeon is a traditional Korean dish of thin beef slices coated in flour and egg, then pan-fried. It has a soft texture with a savory, rich flavor Commonly served during holidays like Chuseok and Lunar New Year, it's a festive favorite.",
+    image: '/images/370in561-/YUKJEON.webp',
   },
   {
     id: 4,
-    title: 'Music videos',
-    description: 'Music videos that capture the essence of your sound and vision.',
-    image: '/images/370in561-/10.webp',
+    title: 'ТТЕОКВОККІ - 떡복이',
+    description: "Tteokbokki is a popular Korean dish made with chewy rice cakes in a spicy-sweet gochujang sauce. The rice cakes absorb the bold, savory flavors, making it a comforting and satisfying meal. Often served as street food, it's loved for its balance of heat, sweetness, and texture.",
+    image: '/images/370in561-/ТТЕОКВОККІ.webp',
   },
-  {
-    id: 5,
-    title: 'Documentary films',
-    description: 'Capturing real stories and experiences through the art of filmmaking.',
-    image: '/images/370in561-/11.webp',
-  },
-  {
-    id: 6,
-    title: 'Event coverage',
-    description: 'Providing comprehensive coverage of your events with a professional touch.',
-    image: '/images/370in561-/12.webp',
-  },
-  // {
-  //   id: 7,
-  //   title: 'Promotional videos',
-  //   description: 'Creating compelling promotional videos to showcase your brand and products.',
-  //   image: '/images/370in561-/6.webp',
-  // },
+  
 ]
 
 const ServicesV10 = () => {
@@ -82,8 +64,8 @@ const ServicesV10 = () => {
                     className="w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-[320px]"
                   />
                 </figure>
-                {/* <h3 className="mb-2.5 mt-[30px] text-2xl leading-[1.1] tracking-normal md:text-[32px]">{item.title}</h3> */}
-                {/* <p className="max-w-[95%] text-base leading-[1.6] tracking-[0.32px]">{item.description}</p> */}
+                <h3 className="mb-2.5 mt-[30px] text-2xl leading-[1.1] tracking-normal md:text-[32px]">{item.title}</h3>
+                <p className="max-w-[95%] text-base leading-[1.6] tracking-[0.32px]">{item.description}</p>
               </div>
             ))}
           </div>

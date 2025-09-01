@@ -54,7 +54,7 @@ const OurWork = () => {
             <span className="rv-badge-text">Korea & Istgah</span>
           </RevealWrapper>
           <TextAppearAnimation>
-            <h2 className="appear·mx-auto·max-w-[770px]·text-2xl">We craft emotionally engaging stories.</h2>
+            <h2 className="appear·mx-auto·max-w-[770px]·text-2xl">collaboration between Korea & Istgah</h2>
           </TextAppearAnimation>
         </div>
       </div>

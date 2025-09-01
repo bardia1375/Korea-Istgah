@@ -24,25 +24,26 @@ const servicesData = [
   {
     id: 2,
     title: 'Songs List',
-    subtitle: 'Journey through the evolution of our platform',
+    subtitle: '',
     items: [],
   },
   {
     id: 5,
     title: 'Executive Team List',
-    subtitle: 'Discovering Korean festivals and celebrations',
+    subtitle: '',
     items: [
       'Mahdi Norouzi - Founder & CEO',
       'Ayeh Bahmani - COO',
-      'Farzad Taghizadeh - Digital Strategy Manager',
+      'Farzad Taghizadeh - Digital Strategy',
       'NazAfarin Moghadam - CDO',
       'Yasamin Hariri - Executive Coordinator',
+      `Reza Kalhor - Sound Manager`
     ],
   },
   {
     id: 4,
     title: 'Musician List',
-    subtitle: 'Curated collection of memorable Korean music',
+    subtitle: '',
     items: [
       'Reza Fanid - Conductor',
       'Daniel Jourabchi - Violinist',

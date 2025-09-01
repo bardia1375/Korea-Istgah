@@ -12,8 +12,8 @@ const songs = [
     desc: '“Golden,” released in 2023 by Jungkook of BTS, shines with an energetic rhythm and bright melody, carrying a message of hope, youth, and the brilliance of life’s golden moments. ✨',
   },
   {
-    title: 'Gheisar',
-    desc: '“Gheisar,” composed by Esfandiar Monfaredzadeh for Masoud Kimiai’s iconic 1969 film, is a powerful and melancholic theme that immortalizes the spirit of vengeance, fate, and tragic heroism in Iranian cinema. 🎶',
+    title: 'Qeysar',
+    desc: '“Qeysar,” composed by Esfandiar Monfaredzadeh for Masoud Kimiai’s iconic 1969 film, is a powerful and melancholic theme that immortalizes the spirit of vengeance, fate, and tragic heroism in Iranian cinema. 🎶',
   },
   { title: 'Porsoon Porsoon', desc: 'Classic Iranian melody with modern orchestration' },
   {
@@ -87,7 +87,7 @@ const ProcessV3 = () => {
                   <p className="mt-2 text-sm leading-6 text-secondary/70 dark:text-white/70">{song.desc}</p>
 
                   {/* دکمه/لینک */}
-                  <div className="mt-5">
+                  {/* <div className="mt-5">
                     <span className="inline-flex items-center gap-2 text-sm font-medium text-indigo-600 transition-all group-hover:gap-2.5 dark:text-indigo-400">
                       View details
                       <svg
@@ -100,7 +100,7 @@ const ProcessV3 = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                       </svg>
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* حاشیه‌ی محو */}

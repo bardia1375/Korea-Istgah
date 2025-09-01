@@ -55,7 +55,7 @@ const BlogPostV7: FC<BlogPostV7Props> = ({ posts }) => {
           {posts.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="group relative h-auto max-w-[385px]">
-                <Link href={`/ai-solutions/blog/${item.slug}`}>
+                <div>
                   <figure className="overflow-hidden">
                     <img
                       src={item?.thumbnail}
@@ -75,7 +75,7 @@ const BlogPostV7: FC<BlogPostV7Props> = ({ posts }) => {
                       </h3>
                     </div> */}
                   </div>
-                </Link>
+                </div>
               </div>
             </SwiperSlide>
           ))}
