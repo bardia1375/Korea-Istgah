@@ -34,14 +34,14 @@ const data = [
       "Tteokbokki is a popular Korean dish made with chewy rice cakes in a spicy-sweet gochujang sauce. The rice cakes absorb the bold, savory flavors, making it a comforting and satisfying meal. Often served as street food, it's loved for its balance of heat, sweetness, and texture.",
     image: '/images/370in561-/ТТЕОКВОККІ.webp',
   },
-    {
+  {
     id: 5,
     title: 'Dak Gangjeong - 닭강정',
     description:
       "Tteokbokki is a popular Korean dish made with chewy rice cakes in a spicy-sweet gochujang sauce. The rice cakes absorb the bold, savory flavors, making it a comforting and satisfying meal. Often served as street food, it's loved for its balance of heat, sweetness, and texture.",
     image: '/images/370in561-/Dak Gangjeong.webp',
   },
-    {
+  {
     id: 6,
     title: 'Kimbap - 김밥',
     description:
