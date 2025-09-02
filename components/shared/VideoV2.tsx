@@ -45,21 +45,32 @@ const VideoV2: FC<VideoV2Props> = ({ thumbnail }) => {
               ].join(' ')}
               aria-expanded={expanded}>
               <p>
-                ISTGAH: The Sound of Peace, Culture and Nostalgia from Iran to the World In a world where borders are
-                becoming increasingly blurred, music and art, as a universal language, play an unparalleled role in
-                creating peace and understanding between cultures. Mahdi Norouzi is the founder of “ISTGAH Orchestra”
-                and CEO of the “Peace Ambassador of ISTGAH” cultural and artistic complex. He was graduated from the
-                Conservatory of Music with more than a decade of activity. He has not only expanded the boundaries of
-                music, but also, as a cultural ambassador, has conveyed the message of peace, nostalgia and solidarity
-                from Iran to the world. From Dream to Reality: The Birth of a Global Orchestra ISTGAH was born in 2010
-                with a big dream: to create an independent and private orchestra in Iran. But this dream quickly went
-                beyond local borders, and ISTGAH became one of the main players in music, musical theater and
-                international collaborations. One of the turning points of this path was the concert of Richard
-                Clayderman, the famous French pianist, for six nights in Tehran. In addition to playing a role in the
-                musical projects of Mary Poppins and The Bride of the Dead, Istgah, has collaborated with distinguished
-                figures such as Maestro Naser Cheshmazar, one of the greats of contemporary Iranian music, and with the
-                cultural departments of various embassies from all five continents such as (Japan, Philippines, Turkey,
-                Italy, Switzerland, Austria, etc.). Istgah showed that music can make ever-lasting moments for cultures.
+                <a href="https://istgahmusical.com" className="text-blue-600 underline hover:text-blue-800">
+                  ISTGAH
+                </a>
+                : The Sound of Peace, Culture and Nostalgia from Iran to the World In a world where borders are becoming
+                increasingly blurred, music and art, as a universal language, play an unparalleled role in creating
+                peace and understanding between cultures.{' '}
+                <a
+                  href="https://mahdi-norouzi.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline hover:text-blue-800">
+                  Mahdi Norouzi
+                </a>
+                is the founder of “ISTGAH Orchestra” and CEO of the “Peace Ambassador of ISTGAH” cultural and artistic
+                complex. He was graduated from the Conservatory of Music with more than a decade of activity. He has not
+                only expanded the boundaries of music, but also, as a cultural ambassador, has conveyed the message of
+                peace, nostalgia and solidarity from Iran to the world. From Dream to Reality: The Birth of a Global
+                Orchestra ISTGAH was born in 2010 with a big dream: to create an independent and private orchestra in
+                Iran. But this dream quickly went beyond local borders, and ISTGAH became one of the main players in
+                music, musical theater and international collaborations. One of the turning points of this path was the
+                concert of Richard Clayderman, the famous French pianist, for six nights in Tehran. In addition to
+                playing a role in the musical projects of Mary Poppins and The Bride of the Dead, Istgah, has
+                collaborated with distinguished figures such as Maestro Naser Cheshmazar, one of the greats of
+                contemporary Iranian music, and with the cultural departments of various embassies from all five
+                continents such as (Japan, Philippines, Turkey, Italy, Switzerland, Austria, etc.). Istgah showed that
+                music can make ever-lasting moments for cultures.
               </p>
 
               {/* Fade overlay when collapsed */}

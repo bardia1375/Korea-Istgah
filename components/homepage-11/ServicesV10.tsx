@@ -62,7 +62,7 @@ const ServicesV10 = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-[320px]"
+                    className="w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[240px] md:h-[280px] lg:h-full"
                   />
                 </figure>
                 {/* <h3 className="mb-2.5 mt-[30px] text-2xl leading-[1.1] tracking-normal md:text-[32px]">{item.title}</h3> */}

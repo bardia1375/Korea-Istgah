@@ -689,7 +689,7 @@ html.lenis {
 
 // CTA Inline Slider
 .cta-slider-container {
-  @apply mx-auto inline-block h-24 w-60 overflow-hidden rounded-[70px] md:h-[100px] md:w-[250px];
+  @apply mx-auto inline-block h-24 w-60 overflow-hidden rounded-[8px] md:h-[100px] md:w-[250px];
 
   .cta-inline-slider {
     @apply absolute h-full w-full transition-transform duration-[0.5s] ease-in-out;

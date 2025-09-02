@@ -43,7 +43,7 @@ const CtaImageSlider: FC<CtaImageSliderProps> = ({ slides }) => {
               width={80}
               height={80}
               priority={index === 0}
-              className="mx-auto rounded-full object-cover"
+              className="mx-auto object-cover"
             />
           </div>
         ))}
