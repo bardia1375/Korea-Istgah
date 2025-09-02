@@ -7,7 +7,7 @@ import image06 from '@/public/images/370in451/6.png'
 import image07 from '@/public/images/370in451/6.png'
 import image08 from '@/public/images/370in451/6.png'
 import image09 from '@/public/images/370in451/6.png'
-import logoDark from '@/public/images/500in200-/korea-istgah.png'
+import logoDark from '@/public/images/IstgahLogo.png'
 
 // import image11 from '@/public/images/370in451-/1.webp'
 // import image12 from '@/public/images/370in451-/2.webp'
@@ -23,6 +23,7 @@ import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
 import RevealWrapper from '../animation/RevealWrapper'
 import TextAppearAnimation from '../animation/TextAppearAnimation'
+import Link from 'next/link'
 
 const WORK_IMAGES = [
   { id: 1, src: image01, alt: 'Client Logo 1' },
@@ -60,26 +61,26 @@ const OurWork = () => {
       </div>
 
       {/* Subtle Korean flag watermark */}
-      <div className="absolute left-12 top-0">
+      <Link href="https://istgahmusical.com" className="absolute left-12 top-0">
         <Image
           src={logoDark}
           alt="Flag of the Republic of Korea"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           className="opacity-1 h-auto"
           priority={false}
         />
-      </div>
-      <div className="absolute right-12 top-0">
+      </Link>
+      <Link href="https://istgahmusical.com" className="absolute right-12 top-0">
         <Image
           src={logoDark}
           alt="Flag of the Republic of Korea"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           className="opacity-1 h-auto"
           priority={false}
         />
-      </div>
+      </Link>
 
       <RevealWrapper>
         <Marquee speed={50} className="pointer-events-none touch-pan-y md:pointer-events-auto">

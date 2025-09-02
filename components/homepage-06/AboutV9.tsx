@@ -73,7 +73,7 @@ const AboutV9 = () => {
         </div>
 
         {/* دکمه */}
-        <RevealWrapper className="mt-4 flex flex-col justify-center overflow-hidden sm:flex-row">
+        {/* <RevealWrapper className="mt-4 flex flex-col justify-center overflow-hidden sm:flex-row">
           <Link
             id="home-anchor"
             href={'/eventProgram'}
@@ -81,7 +81,7 @@ const AboutV9 = () => {
             className="tab-button active border-y border-l text-center text-base font-medium uppercase leading-[1.1] tracking-[1.12px] dark:border-transparent dark:bg-backgroundBody/90 dark:text-secondary max-md:px-10 max-md:py-5 md:px-16 md:py-8">
             Read More
           </Link>
-        </RevealWrapper>
+        </RevealWrapper> */}
       </div>
     </section>
   )

@@ -9,7 +9,7 @@ const songs = [
   },
   {
     title: 'Golden',
-    desc: '“Golden,” released in 2023 by Jungkook of BTS, shines with an energetic rhythm and bright melody, carrying a message of hope, youth, and the brilliance of life’s golden moments. ✨',
+    desc: '”Golden,” is a song performed by Ejae, Audrey Nuna, and Rei Ami as the fictional K-pop girl group Huntr/x in the 2025 animated musical fantasy film KPop Demon Hunters. ✨',
   },
   {
     title: 'Qeysar',
