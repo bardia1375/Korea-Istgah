@@ -12,9 +12,9 @@ const MARQUEE_IMAGES = [
   { id: 1, src: '/images/1156in1477-/1.webp' },
   { id: 2, src: '/images/1156in1477-/2.webp' },
   { id: 3, src: '/images/1156in1477-/3.webp' },
-  { id: 4, src: '/images/1156in1477-/golden-min.webp' },
-  { id: 5, src: '/images/1156in1477-/5.webp' },
-  { id: 6, src: '/images/1156in1477-/6.webp' },
+  // { id: 4, src: '/images/1156in1477-/golden-min.webp' },
+  { id: 4, src: '/images/1156in1477-/5.webp' },
+  { id: 5, src: '/images/1156in1477-/6.webp' },
 ]
 
 const SkewMarquee = () => {
