@@ -15,7 +15,8 @@ const Footer = () => {
             <div className="relative overflow-hidden">
               <p className="rounded-md border-l-4 border-yellow-400 bg-white/10 px-4 py-1 text-lg font-medium text-white backdrop-blur-sm">
                 © 2025 <Link href="https://istgahmusical.com">Istgah Institute</Link>. All rights reserved. | Designed
-                by <a href="https://www.linkedin.com/in/seyedbardiashams/">Bardia</a> & <a href="https://www.linkedin.com/in/farzad-taghizadeh-b16286175/">Farzad</a>
+                by <a href="https://www.linkedin.com/in/seyedbardiashams/">Bardia</a> &{' '}
+                <a href="https://www.linkedin.com/in/farzad-taghizadeh-b16286175/">Farzad</a>
               </p>
               <div className="z-5 animate-shine absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 transform bg-gradient-to-r from-transparent to-white opacity-20"></div>
             </div>
