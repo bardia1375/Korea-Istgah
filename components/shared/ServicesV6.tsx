@@ -45,7 +45,7 @@ const servicesData = [
     title: 'Musician List',
     subtitle: '',
     items: [
-      'Reza Fanid - Conductor',
+      'Reza Fanid - Arranger & Conductor',
       'Daniel Jourabchi - Violinist',
       'Armin Ghozzatian - Violinist',
       'Nafiseh Mahmoudi - Violinist',

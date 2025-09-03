@@ -31,19 +31,19 @@ const CtaImageSlider: FC<CtaImageSliderProps> = ({ slides }) => {
   }, [slides.length])
 
   return (
-    <div className="cta-slider-container flex translate-y-2 items-center justify-center max-sm:mb-5 max-sm:mt-2.5 max-sm:block sm:!mx-5 sm:inline-block sm:translate-y-[20px]">
+    <div className="cta-slider-container flex translate-y-2 items-center justify-center max-sm:mb-5 max-sm:mt-2.5 max-sm:block sm:!mx-5">
       <div
         ref={ctaSlider}
-        className="cta-inline-slider flex h-[100px] w-[100px] items-center justify-center transition-transform duration-500 ease-in-out">
+        className="cta-inline-slider flex h-[120px] w-[120px] items-center justify-center transition-transform duration-500 ease-in-out p-12 ">
         {slides?.map((slide, index) => (
-          <div key={slide.id} className="slide flex h-[100px] w-[100px] items-center justify-center">
+          <div key={slide.id} className="slide flex h-[100px] w-[100px] items-center justify-center ">
             <Image
               src={slide.img}
               alt={`cta-slide-img-${index + 1}`}
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               priority={index === 0}
-              className="mx-auto object-cover"
+              // className="mx-auto bg-white object-contain"
             />
           </div>
         ))}

@@ -15,11 +15,11 @@ const HeroV7 = () => {
 
       <RevealWrapper className="mx-auto max-w-screen-xl px-5">
         <div>
-          <h1 className="text-2xl font-normal leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight sm:tracking-tight md:text-6xl md:leading-[1.2] md:tracking-[-1px] lg:text-5xl lg:leading-[1.25] xl:leading-[1.3] xl:tracking-[-2.88px]">
+          <h1 className="text-xl font-normal leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight sm:tracking-tight md:text-6xl md:leading-[1.2] md:tracking-[-1px] lg:text-5xl lg:leading-[1.25] xl:leading-[1.3] xl:tracking-[-2.88px]">
             Embassy of the Republic of Korea in the Islamic Republic of Iran
             <CtaImageSlider
               slides={[
-                { id: '1', img: '/images/500in200-/3.webp' },
+                { id: '1', img: '/images/500in200-/korean flag.webp' },
                 // { id: '2', img: '/images/500in200-/4.webp' },
               ]}
             />
