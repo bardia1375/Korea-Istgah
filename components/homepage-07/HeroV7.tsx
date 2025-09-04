@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import RevealWrapper from '../animation/RevealWrapper'
-import RevealWrapperV2 from '../animation/RevealWrapperV2'
-import CtaImageSlider from '../shared/CtaImageSlider'
 import HeroGradientAnimation from '../shared/HeroGradientAnimation'
-import SkewMarquee from '../shared/SkewMarquee'
 import HeroAbout from './HeroAbout'
-import hero01 from '@/public/images/699in420/699in420.webp'
+import logoDark from '@/public/images/500in200-/South-Korea-m.gif'
+
 const HeroV7 = () => {
   return (
     <section className="relative overflow-hidden pb-14 pt-32 max-sm:px-3 md:pb-16 md:pt-44 lg:pb-[88px] xl:pb-[100px]">
@@ -13,19 +11,27 @@ const HeroV7 = () => {
         <HeroGradientAnimation />
       </div>
 
-      <RevealWrapper className="mx-auto max-w-screen-xl px-5">
+      <RevealWrapper className="mx-auto max-w-screen-xl px-5 text-center">
         <div>
-          <h1 className="text-xl font-normal leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight sm:tracking-tight md:text-6xl md:leading-[1.2] md:tracking-[-1px] lg:text-5xl lg:leading-[1.25] xl:leading-[1.3] xl:tracking-[-2.88px]">
+          {/* متن اول */}
+          <h1 className="text-xl font-normal leading-snug tracking-normal sm:text-4xl md:text-6xl lg:text-5xl">
             Embassy of the Republic of Korea in the Islamic Republic of Iran
-            <CtaImageSlider
-              slides={[
-                { id: '1', img: '/images/500in200-/korean flag.webp' },
-                // { id: '2', img: '/images/500in200-/4.webp' },
-              ]}
-            />
           </h1>
-          <h2 className="text-lg leading-snug tracking-normal max-lg:text-center sm:text-4xl sm:leading-tight">
-            {' '}
+
+          {/* تصویر وسط */}
+          <div className="flex justify-center my-6">
+            <Image
+              className="max-h-[68px] w-[100px] "
+              src={logoDark}
+              alt="logo"
+              width={120}
+              height={80}
+              priority
+            />
+          </div>
+
+          {/* متن دوم */}
+          <h2 className="text-lg leading-snug tracking-normal sm:text-4xl">
             Commemorating the National Day of the Republic of Korea
           </h2>
         </div>
@@ -37,8 +43,6 @@ const HeroV7 = () => {
           friendship and cooperation between Korea and Iran
         </p>
       </RevealWrapper>
-
-      {/* <SkewMarquee /> */}
 
       <HeroAbout />
     </section>
