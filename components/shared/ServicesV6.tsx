@@ -34,6 +34,7 @@ const servicesData = [
     items: [
       'Mahdi Norouzi - Founder & CEO',
       'Ayeh Bahmani - COO',
+      'Bardia Shams - CTO',
       'Farzad Taghizadeh - Digital Strategy',
       'NazAfarin Moghadam - CDO',
       'Yasamin Hariri - Executive Coordinator',
