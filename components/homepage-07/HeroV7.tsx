@@ -19,15 +19,8 @@ const HeroV7 = () => {
           </h1>
 
           {/* تصویر وسط */}
-          <div className="flex justify-center my-6">
-            <Image
-              className="max-h-[68px] w-[100px] "
-              src={logoDark}
-              alt="logo"
-              width={120}
-              height={80}
-              priority
-            />
+          <div className="my-6 flex justify-center">
+            <Image className="max-h-[68px] w-[100px]" src={logoDark} alt="logo" width={120} height={80} priority />
           </div>
 
           {/* متن دوم */}
